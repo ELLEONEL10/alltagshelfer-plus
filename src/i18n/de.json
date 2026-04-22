@@ -1,0 +1,178 @@
+{
+  "logo": {
+    "name": "Alltagshelfer Plus",
+    "tagline": "Ihr Begleiter im Alltag."
+  },
+  "site": {
+    "nav": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "services": "Leistungen",
+      "pricing": "Preise & Finanzierung",
+      "career": "Karriere",
+      "faq": "FAQ",
+      "contact": "Kontakt",
+      "darkMode": "Dunkelmodus",
+      "lightMode": "Hellmodus"
+    },
+    "home": {
+      "headline": "Alltagshelfer Plus",
+      "subheadline": "Ihr Begleiter im Alltag.",
+      "cta": "Kostenlose Beratung vereinbaren",
+      "welcome": "Fühlen Sie sich sicher, unterstützt und unabhängig in Ihrem eigenen Zuhause. Bei Alltagshelfer Plus bieten wir Ihnen individuelle und liebevolle Unterstützung für Ihren Alltag. Ob Hilfe im Haushalt, Begleitung bei Erledigungen oder einfach ein offenes Ohr – wir sind für Sie da. Diskret, zuverlässig und mit viel Herz.",
+      "termin": {
+        "title": "Terminpanel",
+        "name": "Name",
+        "phone": "Telefonnummer",
+        "cta": "Termin anfragen"
+      },
+      "benefits": {
+        "personalized": {
+          "title": "Individuelle Betreuung",
+          "text": "Perfekt auf Ihre Bedürfnisse und Wünsche abgestimmt."
+        },
+        "trusted": {
+          "title": "Vertrauensvolle Helfer",
+          "text": "Sorgfältig ausgewählte und empathische Begleiter."
+        },
+        "quality": {
+          "title": "Mehr Lebensqualität",
+          "text": "Entlastung für Sie und Ihre Angehörigen."
+        }
+      },
+      "highlights": {
+        "title": "Warum Familien uns vertrauen",
+        "safe": {
+          "title": "Sicherheit im Alltag",
+          "text": "Zuverlässige Unterstützung mit klaren Abläufen und festen Ansprechpartnern."
+        },
+        "personal": {
+          "title": "Menschliche Nähe",
+          "text": "Empathische Begleitung mit Zeit für Gespräche und echte Aufmerksamkeit."
+        },
+        "relief": {
+          "title": "Spürbare Entlastung",
+          "text": "Mehr Ruhe für Angehörige und mehr Selbstständigkeit für Betroffene."
+        }
+      },
+      "steps": {
+        "title": "So einfach starten Sie mit uns",
+        "first": "Kontakt aufnehmen und unverbindlich beraten lassen",
+        "second": "Individuelle Unterstützung gemeinsam planen",
+        "third": "Mit einer festen Bezugsperson sicher begleitet werden"
+      },
+      "finalCta": {
+        "title": "Wir begleiten Sie zuverlässig und mit Herz.",
+        "text": "Lassen Sie uns in einem kurzen Gespräch Ihren Bedarf klären.",
+        "button": "Jetzt Kontakt aufnehmen"
+      }
+    },
+    "about": {
+      "headline": "Mit Herz und Verstand für Sie im Einsatz",
+      "text": "Alltagshelfer Plus wurde mit einem klaren Ziel gegründet: Wir möchten, dass Menschen so lange und so glücklich wie möglich in ihrem eigenen Zuhause leben können. Unser Team besteht aus engagierten Menschen, die nicht nur anpacken können, sondern auch Zeit für ein freundliches Gespräch mitbringen. Wir verstehen uns nicht nur als Dienstleister, sondern als echte Begleiter in Ihrem Alltag."
+    },
+    "services": {
+      "headline": "So unterstützen wir Sie im Alltag",
+      "intro": "Wir passen unsere Leistungen flexibel an Ihre Lebenssituation an.",
+      "items": {
+        "daily": {
+          "title": "Alltagsbegleitung",
+          "text": "Unterstützung beim Aufstehen, Zu-Bett-Gehen, bei der Kleiderwahl und Strukturierung des Tagesablaufs."
+        },
+        "household": {
+          "title": "Hauswirtschaft & Einkauf",
+          "text": "Gemeinsames Einkaufen, Besorgungen machen, leichte Reinigungstätigkeiten und Wäschepflege."
+        },
+        "leisure": {
+          "title": "Freizeit & Gesellschaft",
+          "text": "Begleitung bei Spaziergängen, gemeinsames Kochen, Spielen, Vorlesen oder einfach nur zuhören."
+        },
+        "organization": {
+          "title": "Organisation & Termine",
+          "text": "Begleitung zu Arztbesuchen oder Behörden, Hilfe bei der Haustierversorgung oder Pflanzenpflege."
+        },
+        "aftercare": {
+          "title": "Krankenhausnachsorge",
+          "text": "Zuverlässige Betreuung in der ersten Zeit nach einem Klinikaufenthalt."
+        }
+      }
+    },
+    "pricing": {
+      "headline": "Transparente Kosten & Abrechnung mit der Pflegekasse",
+      "text": "Gute Betreuung muss bezahlbar sein. Wenn Sie einen anerkannten Pflegegrad (1 bis 5) haben, können unsere Leistungen in der Regel direkt über den Entlastungsbetrag (§ 45b SGB XI) oder die Verhinderungspflege mit den Pflegekassen abgerechnet werden.",
+      "steps": {
+        "first": {
+          "title": "Kostenloses Erstgespräch",
+          "text": "Wir lernen uns kennen und ermitteln Ihren Bedarf."
+        },
+        "plan": {
+          "title": "Kostenplan",
+          "text": "Wir erstellen ein transparentes Angebot."
+        },
+        "billing": {
+          "title": "Abrechnung",
+          "text": "Wir unterstützen Sie bei den Anträgen und rechnen auf Wunsch direkt mit der Kasse ab."
+        }
+      },
+      "cta": "Jetzt Finanzierungsmöglichkeiten anfragen"
+    },
+    "career": {
+      "headline": "Werden Sie Teil unseres Teams!",
+      "text": "Sie haben ein großes Herz, sind zuverlässig und arbeiten gerne mit Menschen? Dann suchen wir genau Sie als Alltagsbegleiter/in.",
+      "benefits": {
+        "flexible": "Flexible Arbeitszeiten (Teilzeit, Vollzeit oder Minijob)",
+        "fair": "Faire Bezahlung",
+        "training": "Umfassende Einarbeitung und regelmäßige Schulungen",
+        "environment": "Ein wertschätzendes Arbeitsumfeld"
+      },
+      "upload": "Lebenslauf hochladen",
+      "submit": "Bewerbung senden",
+      "success": "Vielen Dank! Ihre Bewerbung wurde übermittelt."
+    },
+    "faq": {
+      "headline": "Häufig gestellte Fragen",
+      "q1": "Wie schnell können Sie mit der Betreuung starten?",
+      "a1": "Nach unserem Erstgespräch können wir in der Regel innerhalb weniger Tage mit der Unterstützung beginnen.",
+      "q2": "Werden die Helfer regelmäßig gewechselt?",
+      "a2": "Nein, uns ist Kontinuität wichtig. Sie bekommen eine feste Bezugsperson zugeteilt, um ein echtes Vertrauensverhältnis aufzubauen."
+    },
+    "contact": {
+      "headline": "Wir sind für Sie da",
+      "personLabel": "Ansprechpartner:",
+      "phoneLabel": "Telefon:",
+      "addressLabel": "Adresse:",
+      "hoursLabel": "Erreichbarkeit:",
+      "hours": "Montag – Freitag, 08:00 – 18:00 Uhr",
+      "cta": "Nachricht senden",
+      "success": "Vielen Dank! Ihre Nachricht wurde gesendet."
+    },
+    "forms": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Telefonnummer",
+      "message": "Ihre Nachricht"
+    },
+    "footer": {
+      "navigation": "Navigation",
+      "legal": "Rechtliches",
+      "privacy": "Datenschutzerklärung",
+      "imprint": "Impressum",
+      "copyright": "© {{year}} Alltagshelfer Plus"
+    }
+  },
+  "login": {
+    "title": "Anmelden",
+    "googleLogin": "Mit Google anmelden",
+    "loginSuccess": "Erfolgreich angemeldet",
+    "loginError": "Fehler beim Anmelden"
+  },
+  "dashboard": {
+    "title": "Admin-Dashboard",
+    "appointments": "Termine",
+    "pending": "Ausstehend",
+    "confirmed": "Bestätigt",
+    "completed": "Abgeschlossen",
+    "exportCSV": "Als CSV exportieren",
+    "noAppointments": "Keine Termine vorhanden"
+  }
+}

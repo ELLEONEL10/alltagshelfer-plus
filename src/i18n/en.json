@@ -1,0 +1,178 @@
+{
+  "logo": {
+    "name": "Alltagshelfer Plus",
+    "tagline": "Your companion in daily life."
+  },
+  "site": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "pricing": "Pricing & Funding",
+      "career": "Career",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "darkMode": "Dark mode",
+      "lightMode": "Light mode"
+    },
+    "home": {
+      "headline": "Alltagshelfer Plus",
+      "subheadline": "Your companion in daily life.",
+      "cta": "Book a free consultation",
+      "welcome": "Feel safe, supported, and independent in your own home. At Alltagshelfer Plus, we offer personalized and caring support for your daily life. Whether it is help in the household, support with errands, or simply a listening ear – we are here for you. Discreet, reliable, and with heart.",
+      "termin": {
+        "title": "Appointment panel",
+        "name": "Name",
+        "phone": "Phone number",
+        "cta": "Request appointment"
+      },
+      "benefits": {
+        "personalized": {
+          "title": "Individual care",
+          "text": "Perfectly tailored to your needs and wishes."
+        },
+        "trusted": {
+          "title": "Trusted helpers",
+          "text": "Carefully selected and empathetic companions."
+        },
+        "quality": {
+          "title": "Better quality of life",
+          "text": "Relief for you and your family."
+        }
+      },
+      "highlights": {
+        "title": "Why families trust us",
+        "safe": {
+          "title": "Daily safety",
+          "text": "Reliable support with clear processes and fixed contacts."
+        },
+        "personal": {
+          "title": "Human closeness",
+          "text": "Empathetic companionship with time for real conversations."
+        },
+        "relief": {
+          "title": "Noticeable relief",
+          "text": "More peace for relatives and more independence for clients."
+        }
+      },
+      "steps": {
+        "title": "How to get started",
+        "first": "Reach out and get a no-obligation consultation",
+        "second": "Plan your support individually with us",
+        "third": "Receive reliable care from a fixed contact person"
+      },
+      "finalCta": {
+        "title": "We support you reliably and with heart.",
+        "text": "Let us clarify your needs in a short conversation.",
+        "button": "Contact us now"
+      }
+    },
+    "about": {
+      "headline": "Serving you with heart and dedication",
+      "text": "Alltagshelfer Plus was founded with one clear goal: we want people to live at home for as long and as happily as possible. Our team consists of dedicated people who not only provide practical help, but also take time for a friendly conversation. We are not just a service provider, but real companions in your daily life."
+    },
+    "services": {
+      "headline": "How we support you in daily life",
+      "intro": "We adapt our services flexibly to your life situation.",
+      "items": {
+        "daily": {
+          "title": "Daily assistance",
+          "text": "Support with getting up, going to bed, choosing clothes, and structuring the daily routine."
+        },
+        "household": {
+          "title": "Household & shopping",
+          "text": "Shopping together, running errands, light cleaning tasks, and laundry care."
+        },
+        "leisure": {
+          "title": "Leisure & companionship",
+          "text": "Support for walks, cooking together, games, reading aloud, or simply listening."
+        },
+        "organization": {
+          "title": "Organization & appointments",
+          "text": "Support for doctor visits or authorities, help with pet care or plant care."
+        },
+        "aftercare": {
+          "title": "Hospital aftercare",
+          "text": "Reliable support in the first period after a hospital stay."
+        }
+      }
+    },
+    "pricing": {
+      "headline": "Transparent costs & billing with care insurance",
+      "text": "Good care must be affordable. If you have a recognized care level (1 to 5), our services can usually be billed directly via the relief amount (§ 45b SGB XI) or respite care through the care insurance funds.",
+      "steps": {
+        "first": {
+          "title": "Free initial consultation",
+          "text": "We get to know each other and determine your needs."
+        },
+        "plan": {
+          "title": "Cost plan",
+          "text": "We create a transparent offer."
+        },
+        "billing": {
+          "title": "Billing",
+          "text": "We support you with applications and, on request, bill directly with the insurance fund."
+        }
+      },
+      "cta": "Request funding options now"
+    },
+    "career": {
+      "headline": "Become part of our team!",
+      "text": "You have a big heart, are reliable, and enjoy working with people? Then we are looking for you as a daily companion.",
+      "benefits": {
+        "flexible": "Flexible working hours (part-time, full-time, or mini-job)",
+        "fair": "Fair pay",
+        "training": "Comprehensive onboarding and regular training",
+        "environment": "An appreciative working environment"
+      },
+      "upload": "Upload CV",
+      "submit": "Send application",
+      "success": "Thank you! Your application has been submitted."
+    },
+    "faq": {
+      "headline": "Frequently asked questions",
+      "q1": "How quickly can support start?",
+      "a1": "After our initial consultation, we can usually start support within a few days.",
+      "q2": "Are helpers changed regularly?",
+      "a2": "No, continuity is important to us. You will be assigned a fixed contact person to build a real relationship of trust."
+    },
+    "contact": {
+      "headline": "We are here for you",
+      "personLabel": "Contact person:",
+      "phoneLabel": "Phone:",
+      "addressLabel": "Address:",
+      "hoursLabel": "Availability:",
+      "hours": "Monday – Friday, 08:00 – 18:00",
+      "cta": "Send message",
+      "success": "Thank you! Your message has been sent."
+    },
+    "forms": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone number",
+      "message": "Your message"
+    },
+    "footer": {
+      "navigation": "Navigation",
+      "legal": "Legal",
+      "privacy": "Privacy policy",
+      "imprint": "Imprint",
+      "copyright": "© {{year}} Alltagshelfer Plus"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "googleLogin": "Sign in with Google",
+    "loginSuccess": "Signed in successfully",
+    "loginError": "Error signing in"
+  },
+  "dashboard": {
+    "title": "Admin Dashboard",
+    "appointments": "Appointments",
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "completed": "Completed",
+    "exportCSV": "Export as CSV",
+    "noAppointments": "No appointments"
+  }
+}
