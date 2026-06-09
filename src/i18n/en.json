@@ -16,55 +16,78 @@
       "lightMode": "Light mode"
     },
     "home": {
-      "headline": "Alltagshelfer Plus",
-      "subheadline": "Your companion in daily life.",
-      "cta": "Book a free consultation",
-      "welcome": "Feel safe, supported, and independent in your own home. At Alltagshelfer Plus, we offer personalized and caring support for your daily life. Whether it is help in the household, support with errands, or simply a listening ear – we are here for you. Discreet, reliable, and with heart.",
-      "termin": {
-        "title": "Appointment panel",
-        "name": "Name",
-        "phone": "Phone number",
-        "cta": "Request appointment"
+      "eyebrow": "Corporate Safety and Event Medical Cover",
+      "headline": "Certified First Aid Trainer and Event Medical Service",
+      "subheadline": "Professional expertise for corporate safety and event medical coverage.",
+      "cta": "Send Expert Request Now",
+      "introTitle": "Professional Safety You Can Rely On",
+      "welcome": "As a certified first aid trainer and experienced emergency medical technician, I offer far more than medical presence on site. I combine structured knowledge transfer with years of operational emergency experience to elevate safety standards in your company or event environment.",
+      "proof": {
+        "one": "Trust advantage: Verified trainer certification and active emergency experience create immediate credibility.",
+        "two": "Dual benefit: You receive both operational medical cover and practical staff training from one expert.",
+        "three": "Clear USP: Few providers combine certified training competence with active rescue service experience."
       },
-      "benefits": {
-        "personalized": {
-          "title": "Individual care",
-          "text": "Perfectly tailored to your needs and wishes."
+      "training": {
+        "title": "Training and Prevention",
+        "intro": "Use my training competence to strengthen your internal emergency organization:",
+        "inhouse": {
+          "title": "In-house Training",
+          "text": "Hands-on first aid courses and emergency training sessions directly at your company."
         },
-        "trusted": {
-          "title": "Trusted helpers",
-          "text": "Carefully selected and empathetic companions."
+        "consulting": {
+          "title": "Professional Consulting",
+          "text": "Support in creating and optimizing your internal safety and emergency concepts."
         },
-        "quality": {
-          "title": "Better quality of life",
-          "text": "Relief for you and your family."
+        "coaching": {
+          "title": "Prevention Coaching",
+          "text": "Awareness training for medical emergencies and preventive action across teams."
         }
       },
-      "highlights": {
-        "title": "Why families trust us",
-        "safe": {
-          "title": "Daily safety",
-          "text": "Reliable support with clear processes and fixed contacts."
+      "operations": {
+        "title": "Operational Medical Service (Freelance Basis)",
+        "intro": "Professional medical event cover delivered by an experienced expert:",
+        "events": {
+          "title": "Event Coverage",
+          "text": "Professional first response at corporate events, sports tournaments, and public gatherings."
         },
-        "personal": {
-          "title": "Human closeness",
-          "text": "Empathetic companionship with time for real conversations."
+        "crisis": {
+          "title": "Crisis-Proof Response",
+          "text": "Confident intervention in critical situations backed by more than 6 years in active emergency response."
         },
-        "relief": {
-          "title": "Noticeable relief",
-          "text": "More peace for relatives and more independence for clients."
+        "documentation": {
+          "title": "Legally Secure Documentation",
+          "text": "Complete documentation and compliance with current medical standards for organizer protection."
         }
       },
-      "steps": {
-        "title": "How to get started",
-        "first": "Reach out and get a no-obligation consultation",
-        "second": "Plan your support individually with us",
-        "third": "Receive reliable care from a fixed contact person"
+      "expertise": {
+        "title": "Your Advantage Through Cross-Disciplinary Expertise",
+        "authority": {
+          "title": "Authority",
+          "text": "As a trainer, I maintain deep and up-to-date specialist knowledge and apply it precisely."
+        },
+        "flexibility": {
+          "title": "Flexibility",
+          "text": "Freelance collaboration without long-term staffing commitment, ideal for project-based operations."
+        },
+        "professionalism": {
+          "title": "Professionalism",
+          "text": "Commercial training combined with medical expertise ensures smooth administrative handling."
+        },
+        "security": {
+          "title": "Safety",
+          "text": "Professional equipment included: emergency backpack, diagnostics, and airway management tools."
+        }
+      },
+      "areas": {
+        "title": "Service Areas",
+        "business": "Corporate Safety: Training and consulting for companies and institutions.",
+        "events": "Event Management: Medical cover for corporate, sports, and cultural events.",
+        "b2b": "B2B Support: Freelance support for rescue services, schools, and event agencies."
       },
       "finalCta": {
-        "title": "We support you reliably and with heart.",
-        "text": "Let us clarify your needs in a short conversation.",
-        "button": "Contact us now"
+        "title": "Tailored Offer for Your Next Project",
+        "text": "I would be glad to prepare a custom quote for your training projects or event medical coverage.",
+        "button": "Send Expert Request Now"
       }
     },
     "about": {
@@ -137,14 +160,33 @@
       "a2": "No, continuity is important to us. You will be assigned a fixed contact person to build a real relationship of trust."
     },
     "contact": {
-      "headline": "We are here for you",
+      "headline": "Direct Contact to Your Safety Expert",
+      "intro": "Choose professional safety support. I will gladly prepare a tailored offer for your training projects or medical coverage for your next event.",
       "personLabel": "Contact person:",
       "phoneLabel": "Phone:",
       "addressLabel": "Address:",
       "hoursLabel": "Availability:",
       "hours": "Monday – Friday, 08:00 – 18:00",
-      "cta": "Send message",
-      "success": "Thank you! Your message has been sent."
+      "cta": "Send Expert Request Now",
+      "success": "Thank you! Your message has been sent.",
+      "trainingTitle": "Training and Prevention",
+      "training": {
+        "one": "In-house Training: Practical first aid courses and emergency drills delivered directly at your company.",
+        "two": "Professional Consulting: Support for building and optimizing your corporate safety concepts.",
+        "three": "Prevention Coaching: Team sensitization for medical emergencies and preventive behavior."
+      },
+      "opsTitle": "Operational Medical Service (Freelance Basis)",
+      "ops": {
+        "one": "Event Coverage: Professional first response at company events, sports tournaments, and public events.",
+        "two": "Crisis-Proof Action: Confident interventions in emergencies with over 6 years of active rescue experience.",
+        "three": "Legally Secure Support: Complete documentation and compliance with current medical standards."
+      },
+      "whyStrongTitle": "Why This Positioning Works",
+      "whyStrong": {
+        "one": "Immediate trust: Certified trainer status gives clients confidence in your qualification.",
+        "two": "Two-in-one value: You offer event medical service and staff training in one expert package.",
+        "three": "Strong USP: Combining certified instruction and active rescue operations is a clear differentiator."
+      }
     },
     "forms": {
       "name": "Name",

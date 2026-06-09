@@ -3,7 +3,6 @@ import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import de from './de.json'
 import en from './en.json'
-import ar from './ar.json'
 
 i18n
   .use(LanguageDetector)
@@ -11,10 +10,9 @@ i18n
   .init({
     resources: {
       de: { translation: de },
-      en: { translation: en },
-      ar: { translation: ar }
+      en: { translation: en }
     },
-    supportedLngs: ['de', 'en', 'ar'],
+    supportedLngs: ['de', 'en'],
     nonExplicitSupportedLngs: true,
     fallbackLng: 'de',
     defaultNS: 'translation',
@@ -23,7 +21,7 @@ i18n
 
 i18n.on('languageChanged', (lng) => {
   document.documentElement.lang = lng
-  document.documentElement.dir = lng === 'ar' ? 'rtl' : 'ltr'
+  document.documentElement.dir = 'ltr'
 })
 
 export default i18n

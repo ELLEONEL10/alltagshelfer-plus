@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Tajawal:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,29 +11,18 @@
 }
 
 body {
-  font-family: 'Atkinson Hyperlegible', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Manrope', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 17px;
   line-height: 1.65;
-  @apply bg-brand-cream/20 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300;
+  @apply bg-brand-cream/30 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300;
+  background-image: radial-gradient(circle at top, rgba(45, 131, 144, 0.12), transparent 34%), radial-gradient(circle at 85% 15%, rgba(219, 141, 105, 0.12), transparent 28%);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Atkinson Hyperlegible', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Manrope', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-weight: 700;
-}
-
-html[dir="rtl"] {
-  font-family: 'Tajawal', 'Atkinson Hyperlegible', sans-serif;
-  direction: rtl;
-  text-align: right;
-}
-
-html[dir="rtl"] input,
-html[dir="rtl"] textarea,
-html[dir="rtl"] select {
-  text-align: right;
 }
 
 input,
@@ -59,7 +48,7 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 3px solid #e9a78f;
+  outline: 3px solid #db8d69;
   outline-offset: 2px;
 }
 
@@ -83,12 +72,115 @@ select:focus-visible {
   }
 }
 
+@keyframes fadeScale {
+  from {
+    transform: scale(0.98);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(60px) translateY(0) scale(1.02);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0) scale(1.02);
+    opacity: 1;
+  }
+}
+
+@keyframes bgPan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulseSoft {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 0 rgba(233, 167, 143, 0.45);
+  }
+  70% {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 0 0 16px rgba(233, 167, 143, 0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 0 rgba(233, 167, 143, 0);
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.6s ease-in-out;
 }
 
 .animate-slideUp {
   animation: slideUp 0.6s ease-in-out;
+}
+
+.animate-fadeScale {
+  animation: fadeScale 0.7s ease-out;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.9s cubic-bezier(.2,.9,.2,1) both;
+}
+
+.animate-float-slow {
+  animation: float 7s ease-in-out infinite;
+}
+
+.hero-gradient-animated {
+  background-size: 200% 200%;
+  animation: bgPan 14s ease infinite;
+}
+
+.cta-pulse {
+  animation: pulseSoft 2.4s ease-out infinite;
+}
+
+.reveal-up {
+  opacity: 0;
+  animation: slideUp 0.7s ease-out forwards;
+}
+
+.reveal-up-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.reveal-up-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.reveal-up-delay-3 {
+  animation-delay: 0.3s;
 }
 
 .btn-primary {
@@ -99,10 +191,24 @@ select:focus-visible {
   @apply bg-white dark:bg-slate-900 rounded-lg shadow-lg hover:shadow-xl transition;
 }
 
+.card:hover {
+  transform: translateY(-3px);
+}
+
 .section-title {
   @apply text-4xl font-bold text-navy-dark dark:text-brand-cream mb-4;
 }
 
 .container {
   max-width: 1200px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.4s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.2s !important;
+  }
 }

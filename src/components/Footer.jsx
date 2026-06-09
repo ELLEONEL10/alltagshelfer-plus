@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { MapPin, Mail, Phone } from 'lucide-react'
-import logo from '../logo.png'
+import logo from '../logo.svg'
 
 export default function Footer() {
   const { t } = useTranslation()
@@ -14,8 +14,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="Alltagshelfer Plus" className="h-12 w-12 rounded-full object-cover ring-1 ring-gold-primary/40" />
-              <h3 className="text-2xl font-bold">Alltagshelfer Plus</h3>
+              <img src={logo} alt="Alltagshelfer Plus Herz" className="h-14 w-14 rounded-full object-cover ring-1 ring-gold-primary/40" />
+              <h3 className="text-2xl font-bold">Alltagshelfer Plus Herz</h3>
             </div>
             <p className="text-gray-300">{t('site.home.subheadline')}</p>
           </div>

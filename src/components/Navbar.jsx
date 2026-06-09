@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { Menu, Moon, Sun, X } from 'lucide-react'
-import logo from '../logo.png'
+import logo from '../logo.svg'
 
 export default function Navbar({ theme, onToggleTheme }) {
   const { t, i18n } = useTranslation()
@@ -21,9 +21,9 @@ export default function Navbar({ theme, onToggleTheme }) {
     <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-950/95 backdrop-blur border-b border-gold-primary/20 dark:border-slate-700 shadow-sm z-50 transition-colors duration-300">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center gap-4">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Alltagshelfer Plus" className="h-12 w-12 rounded-full object-cover ring-1 ring-gold-primary/40" />
+          <img src={logo} alt="Alltagshelfer Plus Herz" className="h-14 w-14 rounded-full object-cover ring-1 ring-gold-primary/40" />
           <span className="text-lg md:text-xl font-bold text-navy-dark dark:text-brand-cream">
-            Alltagshelfer Plus
+            Alltagshelfer Plus Herz
           </span>
         </Link>
 
@@ -36,7 +36,7 @@ export default function Navbar({ theme, onToggleTheme }) {
           ))}
 
           <div className="flex gap-1">
-            {['de', 'en', 'ar'].map((lang) => (
+            {['de', 'en'].map((lang) => (
               <button
                 key={lang}
                 onClick={() => i18n.changeLanguage(lang)}
@@ -74,7 +74,7 @@ export default function Navbar({ theme, onToggleTheme }) {
             </Link>
           ))}
           <div className="flex gap-2">
-            {['de', 'en', 'ar'].map((lang) => (
+            {['de', 'en'].map((lang) => (
               <button
                 key={lang}
                 onClick={() => i18n.changeLanguage(lang)}

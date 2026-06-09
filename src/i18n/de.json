@@ -16,55 +16,78 @@
       "lightMode": "Hellmodus"
     },
     "home": {
-      "headline": "Alltagshelfer Plus",
-      "subheadline": "Ihr Begleiter im Alltag.",
-      "cta": "Kostenlose Beratung vereinbaren",
-      "welcome": "Fühlen Sie sich sicher, unterstützt und unabhängig in Ihrem eigenen Zuhause. Bei Alltagshelfer Plus bieten wir Ihnen individuelle und liebevolle Unterstützung für Ihren Alltag. Ob Hilfe im Haushalt, Begleitung bei Erledigungen oder einfach ein offenes Ohr – wir sind für Sie da. Diskret, zuverlässig und mit viel Herz.",
-      "termin": {
-        "title": "Terminpanel",
-        "name": "Name",
-        "phone": "Telefonnummer",
-        "cta": "Termin anfragen"
+      "eyebrow": "Betriebliche Sicherheit und Event-Absicherung",
+      "headline": "Zertifizierter Erste-Hilfe-Ausbilder und Sanitätsdienst",
+      "subheadline": "Fachliche Expertise für betriebliche Sicherheit und Event-Absicherung.",
+      "cta": "Jetzt Experten-Anfrage senden",
+      "introTitle": "Setzen Sie auf Sicherheit vom Profi",
+      "welcome": "Als zertifizierter Ausbilder für Erste Hilfe und erfahrener Rettungssanitäter biete ich Ihnen weit mehr als nur eine medizinische Präsenz. Ich verbinde fundierte Wissensvermittlung mit jahrelanger operativer Erfahrung in der Notfallrettung, um die Sicherheit in Ihrem Unternehmen oder auf Ihrer Veranstaltung auf ein Experten-Niveau zu heben.",
+      "proof": {
+        "one": "Vertrauensvorschuss: Als geprüfter Ausbilder und Rettungssanitäter garantiere ich belastbare fachliche Qualität.",
+        "two": "Doppelter Mehrwert: Sie erhalten operative Absicherung und praxisnahe Schulung aus einer Hand.",
+        "three": "Klarer USP: Nur wenige Anbieter kombinieren zertifizierte Ausbildungskompetenz mit aktiver Rettungsdiensterfahrung."
       },
-      "benefits": {
-        "personalized": {
-          "title": "Individuelle Betreuung",
-          "text": "Perfekt auf Ihre Bedürfnisse und Wünsche abgestimmt."
+      "training": {
+        "title": "Ausbildung und Prävention",
+        "intro": "Nutzen Sie meine Kompetenz als Ausbilder, um Ihre betriebliche Notfallorganisation nachhaltig zu stärken:",
+        "inhouse": {
+          "title": "Inhouse-Schulungen",
+          "text": "Praxisnahe Erste-Hilfe-Kurse und Notfalltrainings direkt in Ihrem Unternehmen."
         },
-        "trusted": {
-          "title": "Vertrauensvolle Helfer",
-          "text": "Sorgfältig ausgewählte und empathische Begleiter."
+        "consulting": {
+          "title": "Fachliche Beratung",
+          "text": "Unterstützung bei der Erstellung und Optimierung Ihrer betrieblichen Sicherheitskonzepte."
         },
-        "quality": {
-          "title": "Mehr Lebensqualität",
-          "text": "Entlastung für Sie und Ihre Angehörigen."
+        "coaching": {
+          "title": "Präventions-Coaching",
+          "text": "Sensibilisierung Ihrer Mitarbeiter für medizinische Notfälle und präventive Maßnahmen."
         }
       },
-      "highlights": {
-        "title": "Warum Familien uns vertrauen",
-        "safe": {
-          "title": "Sicherheit im Alltag",
-          "text": "Zuverlässige Unterstützung mit klaren Abläufen und festen Ansprechpartnern."
+      "operations": {
+        "title": "Operativer Sanitätsdienst auf Honorarbasis",
+        "intro": "Professionelle medizinische Absicherung Ihrer Projekte durch einen Experten:",
+        "events": {
+          "title": "Ereignis-Absicherung",
+          "text": "Fachgerechte Erstversorgung bei Firmen-Events, Sportturnieren und öffentlichen Veranstaltungen."
         },
-        "personal": {
-          "title": "Menschliche Nähe",
-          "text": "Empathische Begleitung mit Zeit für Gespräche und echte Aufmerksamkeit."
+        "crisis": {
+          "title": "Krisenfestes Handeln",
+          "text": "Souveräne Intervention in Notfallsituationen durch über 6 Jahre Erfahrung in der aktiven Notfallrettung."
         },
-        "relief": {
-          "title": "Spürbare Entlastung",
-          "text": "Mehr Ruhe für Angehörige und mehr Selbstständigkeit für Betroffene."
+        "documentation": {
+          "title": "Rechtssichere Begleitung",
+          "text": "Lückenlose Dokumentation und Einhaltung aktueller medizinischer Standards für Ihre Absicherung als Veranstalter."
         }
       },
-      "steps": {
-        "title": "So einfach starten Sie mit uns",
-        "first": "Kontakt aufnehmen und unverbindlich beraten lassen",
-        "second": "Individuelle Unterstützung gemeinsam planen",
-        "third": "Mit einer festen Bezugsperson sicher begleitet werden"
+      "expertise": {
+        "title": "Ihr Vorteil durch fachübergreifende Expertise",
+        "authority": {
+          "title": "Autorität",
+          "text": "Als Ausbilder verfüge ich über tiefgreifendes, stets aktuelles Fachwissen, das ich präzise anwende."
+        },
+        "flexibility": {
+          "title": "Flexibilität",
+          "text": "Honorarbasierte Zusammenarbeit ohne langfristige Personalbindung."
+        },
+        "professionalism": {
+          "title": "Professionalität",
+          "text": "Kombination aus kaufmännischer Ausbildung und medizinischer Fachkraft für reibungslose Abwicklung."
+        },
+        "security": {
+          "title": "Sicherheit",
+          "text": "Professionelle Ausrüstung inklusive Notfallrucksack, Diagnostik und Atemwegsmanagement."
+        }
+      },
+      "areas": {
+        "title": "Einsatzgebiete",
+        "business": "Betriebliche Sicherheit: Schulungen und Beratung für Unternehmen und Institutionen.",
+        "events": "Event-Management: Absicherung von Corporate Events, Sport- und Kulturveranstaltungen.",
+        "b2b": "B2B-Support: Freiberufliche Unterstützung für Rettungsdienste, Schulen und Event-Agenturen."
       },
       "finalCta": {
-        "title": "Wir begleiten Sie zuverlässig und mit Herz.",
-        "text": "Lassen Sie uns in einem kurzen Gespräch Ihren Bedarf klären.",
-        "button": "Jetzt Kontakt aufnehmen"
+        "title": "Maßgeschneidertes Angebot für Ihr Projekt",
+        "text": "Gerne erstelle ich Ihnen ein individuelles Angebot für Ihre Ausbildungsprojekte oder Event-Absicherung.",
+        "button": "Jetzt Experten-Anfrage senden"
       }
     },
     "about": {
@@ -137,14 +160,33 @@
       "a2": "Nein, uns ist Kontinuität wichtig. Sie bekommen eine feste Bezugsperson zugeteilt, um ein echtes Vertrauensverhältnis aufzubauen."
     },
     "contact": {
-      "headline": "Wir sind für Sie da",
+      "headline": "Direkter Kontakt zum Experten",
+      "intro": "Setzen Sie auf Sicherheit vom Profi. Gerne erstelle ich Ihnen ein maßgeschneidertes Angebot für Ihre Ausbildungsprojekte oder die sanitätsdienstliche Absicherung Ihres nächsten Events.",
       "personLabel": "Ansprechpartner:",
       "phoneLabel": "Telefon:",
       "addressLabel": "Adresse:",
       "hoursLabel": "Erreichbarkeit:",
       "hours": "Montag – Freitag, 08:00 – 18:00 Uhr",
-      "cta": "Nachricht senden",
-      "success": "Vielen Dank! Ihre Nachricht wurde gesendet."
+      "cta": "Jetzt Experten-Anfrage senden",
+      "success": "Vielen Dank! Ihre Nachricht wurde gesendet.",
+      "trainingTitle": "Ausbildung und Prävention",
+      "training": {
+        "one": "Inhouse-Schulungen: Praxisnahe Erste-Hilfe-Kurse und Notfalltrainings direkt in Ihrem Unternehmen.",
+        "two": "Fachliche Beratung: Unterstützung bei der Erstellung und Optimierung Ihrer betrieblichen Sicherheitskonzepte.",
+        "three": "Präventions-Coaching: Sensibilisierung Ihrer Mitarbeiter für medizinische Notfälle und präventive Maßnahmen."
+      },
+      "opsTitle": "Operativer Sanitätsdienst auf Honorarbasis",
+      "ops": {
+        "one": "Ereignis-Absicherung: Fachgerechte Erstversorgung bei Firmen-Events, Sportturnieren und öffentlichen Veranstaltungen.",
+        "two": "Krisenfestes Handeln: Souveräne Intervention in Notfallsituationen durch über 6 Jahre Erfahrung in der aktiven Notfallrettung.",
+        "three": "Rechtssichere Begleitung: Lückenlose Dokumentation und Einhaltung aktueller medizinischer Standards."
+      },
+      "whyStrongTitle": "Warum diese Positionierung so stark ist",
+      "whyStrong": {
+        "one": "Vertrauensvorschuss: Als zertifizierter Ausbilder ist die Qualifikation klar belegbar.",
+        "two": "Zusatznutzen für Firmen: Operativer Sanitätsdienst plus Schulung der Mitarbeiter in einem Angebot.",
+        "three": "Klarer USP: Die Kombination aus Ausbilder und aktivem Rettungsdienst macht das Angebot einzigartig."
+      }
     },
     "forms": {
       "name": "Name",
