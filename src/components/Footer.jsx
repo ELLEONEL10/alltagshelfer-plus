@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { MapPin, Mail, Phone } from 'lucide-react'
-import logo from '../logo.png'
+import logo from '../logo.svg'
 
 export default function Footer() {
   const { t } = useTranslation()

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { Menu, Moon, Sun, X } from 'lucide-react'
-import logo from '../logo.png'
+import logo from '../logo.svg'
 
 export default function Navbar({ theme, onToggleTheme }) {
   const { t, i18n } = useTranslation()
@@ -36,7 +36,7 @@ export default function Navbar({ theme, onToggleTheme }) {
           ))}
 
           <div className="flex gap-1">
-            {['de', 'en', 'ar'].map((lang) => (
+            {['de', 'en'].map((lang) => (
               <button
                 key={lang}
                 onClick={() => i18n.changeLanguage(lang)}
@@ -74,7 +74,7 @@ export default function Navbar({ theme, onToggleTheme }) {
             </Link>
           ))}
           <div className="flex gap-2">
-            {['de', 'en', 'ar'].map((lang) => (
+            {['de', 'en'].map((lang) => (
               <button
                 key={lang}
                 onClick={() => i18n.changeLanguage(lang)}
