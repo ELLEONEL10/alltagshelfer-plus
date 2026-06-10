@@ -18,12 +18,25 @@ i18n
     nonExplicitSupportedLngs: true,
     fallbackLng: 'de',
     defaultNS: 'translation',
-    interpolation: { escapeValue: false }
+    interpolation: { escapeValue: false },
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage'],
+      lookupLocalStorage: 'i18nextLng'
+    },
+    react: {
+      useSuspense: false
+    }
   })
 
 i18n.on('languageChanged', (lng) => {
   document.documentElement.lang = lng
   document.documentElement.dir = lng === 'ar' ? 'rtl' : 'ltr'
+  try {
+    localStorage.setItem('i18nextLng', lng)
+  } catch (e) {
+    // ignore
+  }
 })
 
 export default i18n

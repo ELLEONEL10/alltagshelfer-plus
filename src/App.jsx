@@ -37,8 +37,10 @@ function App() {
   useEffect(() => {
     const lang = i18n.language || 'de'
     document.documentElement.lang = lang
-    document.documentElement.dir = 'ltr'
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
   }, [i18n.language])
+
+
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark')

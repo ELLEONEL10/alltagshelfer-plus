@@ -39,7 +39,14 @@ export default function Navbar({ theme, onToggleTheme }) {
             {['de', 'en'].map((lang) => (
               <button
                 key={lang}
-                onClick={() => i18n.changeLanguage(lang)}
+                onClick={() => {
+                  i18n.changeLanguage(lang)
+                  try {
+                    localStorage.setItem('i18nextLng', lang)
+                  } catch (e) {
+                    // ignore
+                  }
+                }}
                 className={`px-2 py-1 text-xs rounded ${i18n.language === lang ? 'bg-gold-primary text-white' : 'bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-200'}`}
               >
                 {lang.toUpperCase()}
