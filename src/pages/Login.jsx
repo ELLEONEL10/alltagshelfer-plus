@@ -37,7 +37,7 @@ export default function Login() {
             disabled={loading}
             className="w-full px-6 py-3 rounded bg-gold-primary hover:bg-gold-dark text-white font-bold transition disabled:opacity-50 flex items-center justify-center gap-2"
           >
-            {loading ? 'Loading...' : t('login.googleLogin')}
+            {loading ? t('login.loading') : t('login.googleLogin')}
           </button>
 
           {error && (

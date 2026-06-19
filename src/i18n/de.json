@@ -1,7 +1,182 @@
 {
   "logo": {
-    "name": "Alltagshelfer Plus",
+    "name": "Alltagshelfer Plus Herz",
     "tagline": "Ihr Begleiter im Alltag."
+  },
+  "nav": {
+    "logout": "Abmelden"
+  },
+  "hero": {
+    "title": "Alltagshelfer Plus Herz – Ihr Partner für Sicherheit und Unterstützung im Alltag",
+    "subtitle": "Hilfe im Alltag, klar erklärt und direkt buchbar.",
+    "cta": "Jetzt Experten-Anfrage senden"
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "description": "Massgeschneiderte Betreuung für Ihren Alltag",
+    "housekeeping": {
+      "name": "Haushaltshilfe",
+      "description": "Praktische Hilfe rund um Haushalt und Ordnung"
+    },
+    "childcare": {
+      "name": "Kinderbetreuung",
+      "description": "Liebevolle Betreuung für Ihre Kinder"
+    },
+    "eldercare": {
+      "name": "Seniorenbetreuung",
+      "description": "Fürsorgliche Unterstützung im Alter"
+    },
+    "shopping": {
+      "name": "Einkaufshilfe",
+      "description": "Hilfe bei Einkäufen und Besorgungen"
+    },
+    "garden": {
+      "name": "Gartenarbeit",
+      "description": "Pflege und Unterstützung im Garten"
+    }
+  },
+  "howitworks": {
+    "title": "So einfach geht's",
+    "step1": {
+      "title": "Kontakt aufnehmen",
+      "description": "Vereinbaren Sie ein unverbindliches Gespräch mit uns."
+    },
+    "step2": {
+      "title": "Bedarf ermitteln",
+      "description": "Wir besprechen Ihre Wünsche und Bedürfnisse."
+    },
+    "step3": {
+      "title": "Loslegen",
+      "description": "Wir starten mit der massgeschneiderten Unterstützung."
+    }
+  },
+  "team": {
+    "title": "Unser Team",
+    "description": "Lernen Sie unsere erfahrenen und einfühlsamen Mitarbeiter kennen."
+  },
+  "form": {
+    "title": "Termin vereinbaren",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefonnummer",
+    "service": "Dienstleistung",
+    "message": "Ihre Nachricht",
+    "submit": "Termin anfragen",
+    "loading": "Wird gesendet...",
+    "success": "Vielen Dank! Ihre Anfrage wurde gespeichert.",
+    "error": "Die Buchung konnte nicht gespeichert werden. Bitte erneut versuchen."
+  },
+  "homePage": {
+    "hero": {
+      "badge": "Anerkanntes Angebot nach § 45a SGB XI",
+      "preTitle": "Alltagshelfer Plus Herz",
+      "title": "Alltagshelfer Plus Herz",
+      "subtitle": "Hilfe im Alltag, klar erklärt und direkt buchbar."
+    },
+    "booking": {
+      "title": "Direkte Terminbuchung",
+      "subtitle": "Kurz ausfüllen, wir melden uns zeitnah zurück.",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "phone": "Telefonnummer",
+      "message": "Kurze Nachricht oder Wunsch",
+      "submit": "Termin anfragen",
+      "sending": "Wird gesendet...",
+      "success": "Vielen Dank. Ihre Anfrage wurde gespeichert.",
+      "error": "Die Buchung konnte gerade nicht gespeichert werden. Bitte erneut versuchen."
+    },
+    "services": {
+      "title": "Leistungen auf einen Blick",
+      "subtitle": "Klicken Sie auf eine Kategorie, um mehr Details und passende Unterpunkte zu sehen.",
+      "alltag": {
+        "title": "Alltagsbegleitung",
+        "intro": "Unterstützung für einen ruhigen und sicheren Alltag.",
+        "detail1": "Begleitung im Alltag",
+        "detail2": "Gespräche und Aktivierung",
+        "detail3": "Spaziergänge und kleine Erledigungen"
+      },
+      "haushalt": {
+        "title": "Hauswirtschaft & Einkauf",
+        "intro": "Praktische Hilfe rund um Haushalt, Ordnung und Besorgungen.",
+        "detail1": "Einkäufe und Besorgungen",
+        "detail2": "Leichte Reinigung",
+        "detail3": "Wäsche und einfache Haushaltsaufgaben"
+      },
+      "freizeit": {
+        "title": "Freizeit & Gesellschaft",
+        "intro": "Gemeinsame Zeit, damit der Alltag leichter und schöner wird.",
+        "detail1": "Gemeinsames Kochen",
+        "detail2": "Vorlesen, Spielen oder Gespräche",
+        "detail3": "Begleitung bei Spaziergängen"
+      },
+      "termine": {
+        "title": "Organisation & Termine",
+        "intro": "Wenn Termine, Papierkram oder Abläufe Unterstützung brauchen.",
+        "detail1": "Arzt- und Behördenbegleitung",
+        "detail2": "Kalender und Terminplanung",
+        "detail3": "Alltägliche Organisation"
+      },
+      "nachsorge": {
+        "title": "Nachsorge zu Hause",
+        "intro": "Zuverlässige Hilfe nach einem Krankenhausaufenthalt oder in einer belastenden Phase.",
+        "detail1": "Entlastung nach dem Krankenhaus",
+        "detail2": "Sicherheit im Alltag",
+        "detail3": "Ruhige Begleitung zuhause"
+      }
+    },
+    "training": {
+      "badge": "Zertifizierter Erste-Hilfe-Ausbilder & Sanitätsdienst",
+      "title": "Fachgerechte Expertise für betriebliche Sicherheit und Event-Absicherung",
+      "text": "Als zertifizierter Ausbilder für Erste Hilfe und erfahrener Rettungssanitäter biete ich Ihnen weit mehr als nur eine medizinische Präsenz. Ich verbinde fundierte Wissensvermittlung mit jahrelanger operativer Erfahrung in der Notfallrettung, um die Sicherheit in Ihrem Unternehmen oder auf Ihrer Veranstaltung auf ein Experten-Niveau zu heben.",
+      "areasTitle": "Einsatzgebiete",
+      "area1": "Betriebliche Sicherheit: Schulungen und Beratung für Unternehmen und Institutionen.",
+      "area2": "Event-Management: Absicherung von Corporate Events, Sport- und Kulturveranstaltungen.",
+      "area3": "B2B-Support: Freiberufliche Unterstützung für Rettungsdienste, Schulen und Event-Agenturen.",
+      "cta": "Jetzt Experten-Anfrage senden",
+      "ctaBadge": "Reaktionsschnell & projektbezogen auf Honorarbasis",
+      "sidebarTitle": "Ausbildung, Prävention & Sanitätsdienst – kompakt & praxisnah",
+      "sidebarSubtitle": "Klicken Sie auf einen Bereich, um Details zu sehen.",
+      "item1Title": "Zertifizierter Erste-Hilfe-Ausbilder & Sanitätsdienst",
+      "item1Intro": "Fachliche Sicherheit durch geprüfte Wissensvermittlung und operatives Know-how aus der Notfallrettung.",
+      "item1Detail1": "Inhouse-Schulungen: Erste Hilfe & Notfalltrainings direkt bei Ihnen",
+      "item1Detail2": "Expertenwissen für betriebliche Notfallstrukturen & Abläufe",
+      "item1Detail3": "Präventionsfokus: Sensibilisierung für medizinische Risiken",
+      "item2Title": "Ausbildung & Prävention",
+      "item2Intro": "Stärken Sie Ihre Organisation – mit praxisnaher Schulung, Beratung und Präventions-Coaching.",
+      "item2Detail1": "Inhouse-Schulungen: praxisnah & mit realistischen Szenarien",
+      "item2Detail2": "Fachliche Beratung: Erstellung & Optimierung Ihrer Sicherheitskonzepte",
+      "item2Detail3": "Präventions-Coaching: Mitarbeiter sensibilisieren & nachhaltig verankern",
+      "item3Title": "Operativer Sanitätsdienst auf Honorarbasis",
+      "item3Intro": "Professionelle medizinische Absicherung Ihrer Projekte – souverän, dokumentiert und nach aktuellen Standards.",
+      "item3Detail1": "Ereignis-Absicherung: Erstversorgung bei Firmen-Events, Sport- & öffentlichen Veranstaltungen",
+      "item3Detail2": "Krisenfestes Handeln: über 6 Jahre Erfahrung in der aktiven Notfallrettung",
+      "item3Detail3": "Rechtssichere Begleitung: Lückenlose Dokumentation und Einhaltung medizinischer Standards",
+      "footerTitle": "Setzen Sie auf Sicherheit vom Profi.",
+      "footerText": "Gerne erstelle ich Ihnen ein maßgeschneidertes Angebot für Ihre Ausbildungsprojekte oder die sanitätsdienstliche Absicherung Ihres nächsten Events."
+    }
+  },
+  "aboutPage": {
+    "headline": "Kasem Alzuabi – Ihr Partner für Sicherheit und Unterstützung im Alltag",
+    "subheadline": "Alltagshelfer Plus Herz – Ihr Partner für Sicherheit und Unterstützung im Alltag",
+    "intro1": "Mein Name ist Kasem Alzuabi. Ich bin 30 Jahre alt und verbinde meine Erfahrung aus der Notfallrettung mit einer echten Leidenschaft für die Unterstützung von Menschen.",
+    "intro2": "Ob als Rettungssanitäter bei einem Event oder als Begleiter in Ihrem Alltag: Ich bin für Sie da, wenn Professionalität und ein kühler Kopf gefragt sind – immer kombiniert mit Herzlichkeit und Zuverlässigkeit.",
+    "medicalTitle": "Medizinische Fachautorität",
+    "medical1Title": "Rettungssanitäter",
+    "medical1Text": "Über 6 Jahre Erfahrung in der aktiven Notfallrettung garantieren höchste Souveränität in kritischen Situationen.",
+    "medical2Title": "Zertifizierter Erste-Hilfe-Ausbilder",
+    "medical2Text": "Fachliche Autorität in der Wissensvermittlung und Implementierung betrieblicher Notfallstrukturen.",
+    "medical3Title": "Pharmazeutische Sachkunde",
+    "medical3Text": "Fundierte Expertise für freiverkäufliche Arzneimittel zur qualifizierten Beratung in der Gesundheitsvorsorge.",
+    "pedagogyTitle": "Pädagogik & Soziale Verantwortung",
+    "pedagogy1Title": "Pädagogische Führungskompetenz (Juleica)",
+    "pedagogy1Text": "Geprüfte Qualifikation in Gruppendynamik und Konfliktmanagement für eine verantwortungsbewusste Begleitung auf Augenhöhe.",
+    "pedagogy2Title": "Zertifizierter Alltagsbegleiter (§ 45a SGB XI)",
+    "pedagogy2Text": "Professionelle Unterstützung zur Förderung der Lebensqualität unter Einhaltung höchster Qualitätsstandards.",
+    "strategyTitle": "Strategische Professionalität",
+    "strategyText": "Kaufmännische Fundierung: Garant für strukturierte Projektabwicklung, transparente Honorargestaltung und absolute administrative Integrität.",
+    "promiseTitle": "Mein Versprechen:",
+    "promiseText": "Ich biete Ihnen keine Standardlösungen, sondern eine auf Ihre Bedürfnisse zugeschnittene Expertise. Ob als medizinischer Schutzschild für Ihr Event oder als Ausbilder für Ihr Team – ich stehe für Qualität, Erfahrung und Verantwortungsbewusstsein."
   },
   "site": {
     "nav": {
@@ -16,10 +191,10 @@
       "lightMode": "Hellmodus"
     },
     "home": {
-      "headline": "Alltagshelfer Plus",
+      "headline": "Alltagshelfer Plus Herz",
       "subheadline": "Ihr Begleiter im Alltag.",
       "cta": "Kostenlose Beratung vereinbaren",
-      "welcome": "Fühlen Sie sich sicher, unterstützt und unabhängig in Ihrem eigenen Zuhause. Bei Alltagshelfer Plus bieten wir Ihnen individuelle und liebevolle Unterstützung für Ihren Alltag. Ob Hilfe im Haushalt, Begleitung bei Erledigungen oder einfach ein offenes Ohr – wir sind für Sie da. Diskret, zuverlässig und mit viel Herz.",
+      "welcome": "Fühlen Sie sich sicher, unterstützt und unabhängig in Ihrem eigenen Zuhause. Bei Alltagshelfer Plus Herz bieten wir Ihnen individuelle und liebevolle Unterstützung für Ihren Alltag. Ob Hilfe im Haushalt, Begleitung bei Erledigungen oder einfach ein offenes Ohr – wir sind für Sie da. Diskret, zuverlässig und mit viel Herz.",
       "termin": {
         "title": "Terminpanel",
         "name": "Name",
@@ -69,7 +244,7 @@
     },
     "about": {
       "headline": "Mit Herz und Verstand für Sie im Einsatz",
-      "text": "Alltagshelfer Plus wurde mit einem klaren Ziel gegründet: Wir möchten, dass Menschen so lange und so glücklich wie möglich in ihrem eigenen Zuhause leben können. Unser Team besteht aus engagierten Menschen, die nicht nur anpacken können, sondern auch Zeit für ein freundliches Gespräch mitbringen. Wir verstehen uns nicht nur als Dienstleister, sondern als echte Begleiter in Ihrem Alltag."
+      "text": "Alltagshelfer Plus Herz wurde mit einem klaren Ziel gegründet: Wir möchten, dass Menschen so lange und so glücklich wie möglich in ihrem eigenen Zuhause leben können. Unser Team besteht aus engagierten Menschen, die nicht nur anpacken können, sondern auch Zeit für ein freundliches Gespräch mitbringen. Wir verstehen uns nicht nur als Dienstleister, sondern als echte Begleiter in Ihrem Alltag."
     },
     "services": {
       "headline": "So unterstützen wir Sie im Alltag",
@@ -99,7 +274,7 @@
     },
     "pricing": {
       "headline": "Transparente Kosten & Abrechnung mit der Pflegekasse",
-      "text": "Gute Betreuung muss bezahlbar sein. Wenn Sie einen anerkannten Pflegegrad (1 bis 5) haben, können unsere Leistungen in der Regel direkt über den Entlastungsbetrag (§ 45b SGB XI) oder die Verhinderungspflege mit den Pflegekassen abgerechnet werden.",
+      "text": "Gute Betreuung muss bezahlbar sein. Wenn Sie einen anerkannten Pflegegrad (1 bis 5) haben, können unsere Leistungen in der Regel direkt über den Entlastungsbetrag (§ 45b SGB XI) bzw. Leistungen nach § 45a SGB XI oder die Verhinderungspflege mit den Pflegekassen abgerechnet werden.",
       "steps": {
         "first": {
           "title": "Kostenloses Erstgespräch",
@@ -157,14 +332,41 @@
       "legal": "Rechtliches",
       "privacy": "Datenschutzerklärung",
       "imprint": "Impressum",
-      "copyright": "© {{year}} Alltagshelfer Plus"
+      "copyright": "© {{year}} Alltagshelfer Plus Herz"
     }
   },
   "login": {
     "title": "Anmelden",
     "googleLogin": "Mit Google anmelden",
     "loginSuccess": "Erfolgreich angemeldet",
-    "loginError": "Fehler beim Anmelden"
+    "loginError": "Fehler beim Anmelden",
+    "loading": "Wird geladen..."
+  },
+  "legalPage": {
+    "imprintTitle": "Impressum",
+    "imprintSubtitle": "Angaben gemäß § 5 TMG",
+    "representedBy": "Vertreten durch:",
+    "contact": "Kontakt:",
+    "phone": "Telefon:",
+    "email": "E-Mail:",
+    "vatId": "Umsatzsteuer-ID:",
+    "vatIdText": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:",
+    "privacyTitle": "Datenschutzerklärung",
+    "privacyIntro": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wir Sie darüber, welche Daten wir auf dieser Website erheben und wie wir diese verarbeiten.",
+    "section1Title": "1. Verantwortliche Stelle",
+    "ceo": "Geschäftsführer:",
+    "section2Title": "2. Erhebung und Speicherung personenbezogener Daten",
+    "section2Text": "Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist.",
+    "section3Title": "3. Kontaktformular",
+    "section3Text": "Wenn Sie uns per Formular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.",
+    "section4Title": "4. Rechtsgrundlagen der Verarbeitung",
+    "section4Text": "Die Verarbeitung Ihrer Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a, b und f DSGVO.",
+    "section5Title": "5. Ihre Rechte",
+    "section5Text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung sowie Datenübertragbarkeit. Außerdem können Sie einer Verarbeitung widersprechen und eine erteilte Einwilligung jederzeit widerrufen.",
+    "section6Title": "6. Aufsichtsbehörde",
+    "section6Text": "Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.",
+    "section7Title": "7. Aktualität und Änderung dieser Datenschutzerklärung",
+    "section7Text": "Diese Datenschutzerklärung hat den Stand: [Datum]. Wir behalten uns vor, sie bei Bedarf anzupassen."
   },
   "dashboard": {
     "title": "Admin-Dashboard",
@@ -173,6 +375,17 @@
     "confirmed": "Bestätigt",
     "completed": "Abgeschlossen",
     "exportCSV": "Als CSV exportieren",
-    "noAppointments": "Keine Termine vorhanden"
+    "noAppointments": "Keine Termine vorhanden",
+    "welcome": "Willkommen",
+    "tableName": "Name",
+    "tableEmail": "E-Mail",
+    "tablePhone": "Telefon",
+    "tableService": "Leistung",
+    "tableDate": "Datum",
+    "tableStatus": "Status",
+    "tableAction": "Aktion",
+    "errorLoading": "Fehler beim Laden der Termine",
+    "errorUpdate": "Fehler beim Aktualisieren des Termins",
+    "errorExport": "Fehler beim Exportieren der CSV"
   }
 }

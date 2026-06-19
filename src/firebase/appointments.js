@@ -25,6 +25,14 @@ export const deleteAppointment = async (appointmentId) => {
   return await deleteDoc(ref)
 }
 
+const csvEscape = (value) => {
+  const str = String(value ?? '')
+  if (str.includes(',') || str.includes('"') || str.includes('\n') || str.includes('\r')) {
+    return `"${str.replace(/"/g, '""')}"`
+  }
+  return str
+}
+
 // CSV Export functionality
 export const appointmentsToCSV = (appointments) => {
   const headers = ['ID', 'Name', 'Phone', 'Email', 'Service', 'Date', 'Time', 'Message', 'Status', 'Created']
@@ -43,7 +51,7 @@ export const appointmentsToCSV = (appointments) => {
 
   const csv = [
     headers.join(','),
-    ...rows.map(r => r.map(cell => `"${cell}"`).join(','))
+    ...rows.map(r => r.map(csvEscape).join(','))
   ].join('\n')
 
   return csv

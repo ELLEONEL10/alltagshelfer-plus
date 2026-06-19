@@ -1,7 +1,182 @@
 {
   "logo": {
-    "name": "Alltagshelfer Plus",
+    "name": "Alltagshelfer Plus Herz",
     "tagline": "Your companion in daily life."
+  },
+  "nav": {
+    "logout": "Logout"
+  },
+  "hero": {
+    "title": "Alltagshelfer Plus Herz – Your partner for safety and everyday support",
+    "subtitle": "Everyday help, clearly explained and directly bookable.",
+    "cta": "Send an expert request now"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Tailored support for your daily life",
+    "housekeeping": {
+      "name": "Housekeeping",
+      "description": "Practical help around the household"
+    },
+    "childcare": {
+      "name": "Childcare",
+      "description": "Loving care for your children"
+    },
+    "eldercare": {
+      "name": "Elderly Care",
+      "description": "Compassionate support in old age"
+    },
+    "shopping": {
+      "name": "Shopping Assistance",
+      "description": "Help with shopping and errands"
+    },
+    "garden": {
+      "name": "Gardening",
+      "description": "Garden care and support"
+    }
+  },
+  "howitworks": {
+    "title": "How it works",
+    "step1": {
+      "title": "Get in touch",
+      "description": "Schedule a no-obligation consultation with us."
+    },
+    "step2": {
+      "title": "Determine needs",
+      "description": "We discuss your wishes and needs."
+    },
+    "step3": {
+      "title": "Get started",
+      "description": "We begin the tailored support."
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "description": "Meet our experienced and empathetic staff."
+  },
+  "form": {
+    "title": "Book an appointment",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone number",
+    "service": "Service",
+    "message": "Your message",
+    "submit": "Request appointment",
+    "loading": "Sending...",
+    "success": "Thank you! Your request has been saved.",
+    "error": "The booking could not be saved. Please try again."
+  },
+  "homePage": {
+    "hero": {
+      "badge": "Recognized offer according to § 45a SGB XI",
+      "preTitle": "Alltagshelfer Plus Herz",
+      "title": "Alltagshelfer Plus Herz",
+      "subtitle": "Everyday help, clearly explained and directly bookable."
+    },
+    "booking": {
+      "title": "Book an appointment directly",
+      "subtitle": "Fill out the form and we will get back to you promptly.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "phone": "Phone number",
+      "message": "Short message or request",
+      "submit": "Request appointment",
+      "sending": "Sending...",
+      "success": "Thank you. Your request has been saved.",
+      "error": "The booking could not be saved. Please try again."
+    },
+    "services": {
+      "title": "Services at a glance",
+      "subtitle": "Click on a category to see more details and related items.",
+      "alltag": {
+        "title": "Daily companionship",
+        "intro": "Support for a calm and safe daily routine.",
+        "detail1": "Companionship in daily life",
+        "detail2": "Conversations and activation",
+        "detail3": "Walks and small errands"
+      },
+      "haushalt": {
+        "title": "Household & Shopping",
+        "intro": "Practical help with housekeeping, order, and errands.",
+        "detail1": "Shopping and errands",
+        "detail2": "Light cleaning",
+        "detail3": "Laundry and simple household tasks"
+      },
+      "freizeit": {
+        "title": "Leisure & Companionship",
+        "intro": "Quality time together to make daily life easier and more enjoyable.",
+        "detail1": "Cooking together",
+        "detail2": "Reading aloud, playing, or conversations",
+        "detail3": "Accompaniment on walks"
+      },
+      "termine": {
+        "title": "Organization & Appointments",
+        "intro": "When appointments, paperwork, or routines need support.",
+        "detail1": "Doctor and authority accompaniment",
+        "detail2": "Calendar and appointment planning",
+        "detail3": "Everyday organization"
+      },
+      "nachsorge": {
+        "title": "Aftercare at home",
+        "intro": "Reliable help after a hospital stay or during a stressful phase.",
+        "detail1": "Relief after hospital",
+        "detail2": "Safety in daily life",
+        "detail3": "Peaceful companionship at home"
+      }
+    },
+    "training": {
+      "badge": "Certified First Aid Instructor & Ambulance Service",
+      "title": "Professional expertise for corporate safety and event security",
+      "text": "As a certified first aid instructor and experienced paramedic, I offer you far more than just medical presence. I combine well-founded knowledge transfer with years of operational experience in emergency rescue to raise the safety level in your company or at your event to an expert level.",
+      "areasTitle": "Areas of application",
+      "area1": "Corporate safety: Training and consulting for companies and institutions.",
+      "area2": "Event management: Security for corporate events, sports and cultural events.",
+      "area3": "B2B support: Freelance support for rescue services, schools and event agencies.",
+      "cta": "Send an expert request now",
+      "ctaBadge": "Fast response & project-based on a fee basis",
+      "sidebarTitle": "Training, prevention & ambulance service – compact & practical",
+      "sidebarSubtitle": "Click on an area to see details.",
+      "item1Title": "Certified First Aid Instructor & Ambulance Service",
+      "item1Intro": "Professional safety through proven knowledge transfer and operational expertise from emergency rescue.",
+      "item1Detail1": "In-house training: First aid & emergency training directly at your location",
+      "item1Detail2": "Expert knowledge for corporate emergency structures & procedures",
+      "item1Detail3": "Prevention focus: Awareness of medical risks",
+      "item2Title": "Training & Prevention",
+      "item2Intro": "Strengthen your organization with practical training, consulting and prevention coaching.",
+      "item2Detail1": "In-house training: practical & with realistic scenarios",
+      "item2Detail2": "Technical consulting: Creation & optimization of your safety concepts",
+      "item2Detail3": "Prevention coaching: Sensitize employees & anchor sustainably",
+      "item3Title": "Operational ambulance service on a fee basis",
+      "item3Intro": "Professional medical security for your projects – confident, documented and according to current standards.",
+      "item3Detail1": "Event security: First aid at corporate events, sports & public events",
+      "item3Detail2": "Crisis-proof action: over 6 years of experience in active emergency rescue",
+      "item3Detail3": "Legally secure accompaniment: Complete documentation and compliance with medical standards",
+      "footerTitle": "Rely on safety from a professional.",
+      "footerText": "I will be happy to create a customized offer for your training projects or the medical security of your next event."
+    }
+  },
+  "aboutPage": {
+    "headline": "Kasem Alzuabi – Your partner for safety and everyday support",
+    "subheadline": "Alltagshelfer Plus Herz – Your partner for safety and everyday support",
+    "intro1": "My name is Kasem Alzuabi. I am 30 years old and combine my experience from emergency rescue with a genuine passion for supporting people.",
+    "intro2": "Whether as a paramedic at an event or as a companion in your daily life: I am here for you when professionalism and a cool head are required – always combined with warmth and reliability.",
+    "medicalTitle": "Medical Authority",
+    "medical1Title": "Paramedic",
+    "medical1Text": "Over 6 years of experience in active emergency rescue guaranteeing the highest level of composure in critical situations.",
+    "medical2Title": "Certified First Aid Instructor",
+    "medical2Text": "Professional authority in knowledge transfer and implementation of corporate emergency structures.",
+    "medical3Title": "Pharmaceutical Expertise",
+    "medical3Text": "In-depth expertise in over-the-counter medications for qualified health prevention advice.",
+    "pedagogyTitle": "Pedagogy & Social Responsibility",
+    "pedagogy1Title": "Pedagogical Leadership Competence (Juleica)",
+    "pedagogy1Text": "Certified qualification in group dynamics and conflict management for responsible companionship at eye level.",
+    "pedagogy2Title": "Certified Daily Companion (§ 45a SGB XI)",
+    "pedagogy2Text": "Professional support to promote quality of life while adhering to the highest quality standards.",
+    "strategyTitle": "Strategic Professionalism",
+    "strategyText": "Commercial foundation: a guarantee for structured project execution, transparent fee arrangements and absolute administrative integrity.",
+    "promiseTitle": "My promise:",
+    "promiseText": "I do not offer standard solutions, but expertise tailored to your needs. Whether as a medical shield for your event or as a trainer for your team – I stand for quality, experience and responsibility."
   },
   "site": {
     "nav": {
@@ -16,10 +191,10 @@
       "lightMode": "Light mode"
     },
     "home": {
-      "headline": "Alltagshelfer Plus",
+      "headline": "Alltagshelfer Plus Herz",
       "subheadline": "Your companion in daily life.",
       "cta": "Book a free consultation",
-      "welcome": "Feel safe, supported, and independent in your own home. At Alltagshelfer Plus, we offer personalized and caring support for your daily life. Whether it is help in the household, support with errands, or simply a listening ear – we are here for you. Discreet, reliable, and with heart.",
+      "welcome": "Feel safe, supported, and independent in your own home. At Alltagshelfer Plus Herz, we offer personalized and caring support for your daily life. Whether it is help in the household, support with errands, or simply a listening ear – we are here for you. Discreet, reliable, and with heart.",
       "termin": {
         "title": "Appointment panel",
         "name": "Name",
@@ -69,7 +244,7 @@
     },
     "about": {
       "headline": "Serving you with heart and dedication",
-      "text": "Alltagshelfer Plus was founded with one clear goal: we want people to live at home for as long and as happily as possible. Our team consists of dedicated people who not only provide practical help, but also take time for a friendly conversation. We are not just a service provider, but real companions in your daily life."
+      "text": "Alltagshelfer Plus Herz was founded with one clear goal: we want people to live at home for as long and as happily as possible. Our team consists of dedicated people who not only provide practical help, but also take time for a friendly conversation. We are not just a service provider, but real companions in your daily life."
     },
     "services": {
       "headline": "How we support you in daily life",
@@ -157,14 +332,41 @@
       "legal": "Legal",
       "privacy": "Privacy policy",
       "imprint": "Imprint",
-      "copyright": "© {{year}} Alltagshelfer Plus"
+      "copyright": "© {{year}} Alltagshelfer Plus Herz"
     }
   },
   "login": {
     "title": "Login",
     "googleLogin": "Sign in with Google",
     "loginSuccess": "Signed in successfully",
-    "loginError": "Error signing in"
+    "loginError": "Error signing in",
+    "loading": "Loading..."
+  },
+  "legalPage": {
+    "imprintTitle": "Imprint",
+    "imprintSubtitle": "Information according to § 5 TMG",
+    "representedBy": "Represented by:",
+    "contact": "Contact:",
+    "phone": "Phone:",
+    "email": "Email:",
+    "vatId": "VAT ID:",
+    "vatIdText": "VAT identification number according to § 27 a German VAT Act:",
+    "privacyTitle": "Privacy Policy",
+    "privacyIntro": "The protection of your personal data is important to us. Below we inform you about what data we collect on this website and how we process it.",
+    "section1Title": "1. Responsible body",
+    "ceo": "CEO:",
+    "section2Title": "2. Collection and storage of personal data",
+    "section2Text": "We only process personal data to the extent necessary to provide a functional website and our content and services.",
+    "section3Title": "3. Contact form",
+    "section3Text": "If you send us inquiries via the form, your details from the form will be stored with us for the purpose of processing the inquiry and for follow-up questions.",
+    "section4Title": "4. Legal basis for processing",
+    "section4Text": "The processing of your data is based on Art. 6 para. 1 lit. a, b and f GDPR.",
+    "section5Title": "5. Your rights",
+    "section5Text": "You have the right to information, correction, deletion, restriction of processing and data portability. You can also object to processing and revoke consent at any time.",
+    "section6Title": "6. Supervisory authority",
+    "section6Text": "You have the right to complain to a data protection supervisory authority about the processing of your personal data by us.",
+    "section7Title": "7. Currency and changes to this privacy policy",
+    "section7Text": "This privacy policy is currently dated: [Date]. We reserve the right to adjust it as needed."
   },
   "dashboard": {
     "title": "Admin Dashboard",
@@ -173,6 +375,17 @@
     "confirmed": "Confirmed",
     "completed": "Completed",
     "exportCSV": "Export as CSV",
-    "noAppointments": "No appointments"
+    "noAppointments": "No appointments",
+    "welcome": "Welcome",
+    "tableName": "Name",
+    "tableEmail": "Email",
+    "tablePhone": "Phone",
+    "tableService": "Service",
+    "tableDate": "Date",
+    "tableStatus": "Status",
+    "tableAction": "Action",
+    "errorLoading": "Error loading appointments",
+    "errorUpdate": "Error updating appointment",
+    "errorExport": "Error exporting CSV"
   }
 }

@@ -14,35 +14,47 @@ export default function Dashboard() {
   const [error, setError] = useState('')
 
   useEffect(() => {
+    let cancelled = false
     const currentUser = getCurrentUser()
     if (!currentUser) {
       navigate('/login')
       return
     }
     setUser(currentUser)
-    loadAppointments()
-  }, [navigate])
+    initLoad()
+    return () => { cancelled = true }
 
-  const loadAppointments = async () => {
+    async function initLoad() {
+      try {
+        setLoading(true)
+        const data = await getAppointments()
+        if (!cancelled) setAppointments(data)
+      } catch (err) {
+        console.error('Error loading appointments:', err)
+        if (!cancelled) setError(t('dashboard.errorLoading'))
+      } finally {
+        if (!cancelled) setLoading(false)
+      }
+    }
+  }, [navigate, t])
+
+  const refreshAppointments = async () => {
     try {
-      setLoading(true)
       const data = await getAppointments()
       setAppointments(data)
     } catch (err) {
       console.error('Error loading appointments:', err)
-      setError('Error loading appointments')
-    } finally {
-      setLoading(false)
+      setError(t('dashboard.errorLoading'))
     }
   }
 
   const handleStatusChange = async (appointmentId, newStatus) => {
     try {
       await updateAppointmentStatus(appointmentId, newStatus)
-      loadAppointments()
+      refreshAppointments()
     } catch (err) {
       console.error('Error updating appointment:', err)
-      setError('Error updating appointment')
+      setError(t('dashboard.errorUpdate'))
     }
   }
 
@@ -60,7 +72,7 @@ export default function Dashboard() {
       downloadCSV(appointments)
     } catch (err) {
       console.error('Error exporting CSV:', err)
-      setError('Error exporting CSV')
+      setError(t('dashboard.errorExport'))
     }
   }
 
@@ -82,7 +94,7 @@ export default function Dashboard() {
               {t('dashboard.title')}
             </h1>
             <p className="text-gray-600 dark:text-slate-300 mt-2">
-              Welcome, {user?.displayName || user?.email}
+              {t('dashboard.welcome')}, {user?.displayName || user?.email}
             </p>
           </div>
           <div className="flex gap-2">
@@ -119,13 +131,13 @@ export default function Dashboard() {
             <table className="w-full">
               <thead className="bg-navy-dark text-white">
                 <tr>
-                  <th className="px-6 py-3 text-left">Name</th>
-                  <th className="px-6 py-3 text-left">Email</th>
-                  <th className="px-6 py-3 text-left">Phone</th>
-                  <th className="px-6 py-3 text-left">Service</th>
-                  <th className="px-6 py-3 text-left">Date</th>
-                  <th className="px-6 py-3 text-left">Status</th>
-                  <th className="px-6 py-3 text-left">Action</th>
+                  <th className="px-6 py-3 text-left">{t('dashboard.tableName')}</th>
+                  <th className="px-6 py-3 text-left">{t('dashboard.tableEmail')}</th>
+                  <th className="px-6 py-3 text-left">{t('dashboard.tablePhone')}</th>
+                  <th className="px-6 py-3 text-left">{t('dashboard.tableService')}</th>
+                  <th className="px-6 py-3 text-left">{t('dashboard.tableDate')}</th>
+                  <th className="px-6 py-3 text-left">{t('dashboard.tableStatus')}</th>
+                  <th className="px-6 py-3 text-left">{t('dashboard.tableAction')}</th>
                 </tr>
               </thead>
               <tbody>

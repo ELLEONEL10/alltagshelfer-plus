@@ -21,9 +21,9 @@ export default function Navbar({ theme, onToggleTheme }) {
     <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-950/95 backdrop-blur border-b border-gold-primary/20 dark:border-slate-700 shadow-sm z-50 transition-colors duration-300">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center gap-4">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Alltagshelfer Plus" className="h-12 w-12 rounded-full object-cover ring-1 ring-gold-primary/40" />
+          <img src={logo} alt="Alltagshelfer Plus Herz" className="h-12 w-12 rounded-full object-cover ring-1 ring-gold-primary/40" />
           <span className="text-lg md:text-xl font-bold text-navy-dark dark:text-brand-cream">
-            Alltagshelfer Plus
+            Alltagshelfer Plus Herz
           </span>
         </Link>
 

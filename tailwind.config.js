@@ -31,9 +31,8 @@ export default {
         'brand-cream': '#f8efe7',
       },
       fontFamily: {
-        serif: ['Atkinson Hyperlegible', 'sans-serif'],
-        sans: ['Atkinson Hyperlegible', 'sans-serif'],
-        arabic: ['Tajawal', 'Atkinson Hyperlegible', 'sans-serif'],
+        sans: ['Manrope', 'system-ui', 'sans-serif'],
+        serif: ['Manrope', 'Georgia', 'serif'],
       },
       borderRadius: {
         'lg': '16px',

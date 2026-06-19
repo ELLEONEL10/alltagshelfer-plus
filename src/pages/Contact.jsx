@@ -1,13 +1,29 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { saveContactMessage } from '../firebase/contact'
 
 export default function Contact() {
   const { t } = useTranslation()
   const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    setSent(true)
+    setLoading(true)
+    setError('')
+    const form = event.target
+    const data = Object.fromEntries(new FormData(form))
+    try {
+      await saveContactMessage(data)
+      setSent(true)
+      form.reset()
+    } catch (err) {
+      console.error('Error saving contact message:', err)
+      setError(t('homePage.booking.error'))
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -59,10 +75,11 @@ export default function Contact() {
               required
               className="w-full px-4 py-3 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900"
             />
-            <button type="submit" className="btn-primary w-full bg-gold-primary hover:bg-gold-dark text-navy-dark">
-              {t('site.contact.cta')}
+            <button type="submit" disabled={loading} className="btn-primary w-full bg-gold-primary hover:bg-gold-dark text-navy-dark disabled:opacity-50">
+              {loading ? t('homePage.booking.sending') : t('site.contact.cta')}
             </button>
             {sent && <p className="text-green-700 dark:text-green-300">{t('site.contact.success')}</p>}
+            {error && <p className="text-red-600 text-center">{error}</p>}
           </form>
         </div>
       </div>

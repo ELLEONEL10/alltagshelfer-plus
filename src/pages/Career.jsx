@@ -1,13 +1,34 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { saveApplication } from '../firebase/career'
 
 export default function Career() {
   const { t } = useTranslation()
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+    const form = event.target
+    const data = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      phone: form.phone.value.trim(),
+      cvFile: form.cv.files[0] || null,
+    }
+    try {
+      await saveApplication(data)
+      setSubmitted(true)
+      form.reset()
+    } catch (err) {
+      console.error('Error saving application:', err)
+      setError(t('homePage.booking.error'))
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -57,10 +78,11 @@ export default function Career() {
               className="w-full px-4 py-3 rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900"
             />
           </div>
-          <button type="submit" className="btn-primary w-full bg-gold-primary hover:bg-gold-dark text-navy-dark">
-            {t('site.career.submit')}
+          <button type="submit" disabled={loading} className="btn-primary w-full bg-gold-primary hover:bg-gold-dark text-navy-dark disabled:opacity-50">
+            {loading ? t('homePage.booking.sending') : t('site.career.submit')}
           </button>
           {submitted && <p className="text-green-700 dark:text-green-300">{t('site.career.success')}</p>}
+          {error && <p className="text-red-600 text-center">{error}</p>}
         </form>
       </div>
     </section>
