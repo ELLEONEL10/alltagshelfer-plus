@@ -36,7 +36,10 @@ export default function Contact() {
               <strong>{t('site.contact.personLabel')}</strong> Kasem Alzuabi
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-200 mb-3">
-              <strong>{t('site.contact.phoneLabel')}</strong> 016095383001
+              <strong>{t('site.contact.phoneLabel')}</strong> +4915565666559
+            </p>
+            <p className="text-lg text-slate-700 dark:text-slate-200 mb-3">
+              <strong>{t('site.contact.emailLabel')}</strong> info@alltagshelfer-ph.de
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-200 mb-3">
               <strong>{t('site.contact.addressLabel')}</strong> Gerlachstr.31, 14480 Potsdam

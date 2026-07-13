@@ -21,8 +21,8 @@ export default function Legal() {
           </p>
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed mt-4">
             <strong>{t('legalPage.contact')}</strong><br />
-            {t('legalPage.phone')} 016095383001<br />
-            {t('legalPage.email')} info@alltagshelfer-plus.de
+            {t('legalPage.phone')} +4915565666559<br />
+            {t('legalPage.email')} info@alltagshelfer-ph.de
           </p>
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed mt-4">
             <strong>{t('legalPage.vatId')}</strong><br />
@@ -42,7 +42,7 @@ export default function Legal() {
             Gerlachstr. 31<br />
             14480 Potsdam<br />
             {t('legalPage.ceo')} Kasem Alzuabi<br />
-            {t('legalPage.email')} info@alltagshelfer-plus.de
+            {t('legalPage.email')} info@alltagshelfer-ph.de
           </p>
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed mt-4">
             <strong>{t('legalPage.section2Title')}</strong><br />

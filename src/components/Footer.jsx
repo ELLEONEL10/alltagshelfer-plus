@@ -57,11 +57,11 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300 text-sm">
               <li className="flex gap-2">
                 <Phone size={18} />
-                016095383001
+                +4915565666559
               </li>
               <li className="flex gap-2">
                 <Mail size={18} />
-                info@alltagshelfer-plus.de
+                info@alltagshelfer-ph.de
               </li>
               <li className="flex gap-2">
                 <MapPin size={18} />
