@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { BedSingle, CalendarCheck, ChevronDown, ShoppingCart, Smile, Users, ShieldCheck, GraduationCap, ClipboardCheck, MapPin, PhoneCall } from 'lucide-react'
 import homepageArt from '../homepage.svg'
 import { saveAppointment } from '../firebase/appointments'
+import { sendAppointmentEmail } from '../firebase/email'
 
 export default function Home() {
   const { t } = useTranslation()
@@ -46,6 +47,7 @@ export default function Home() {
 
     try {
       await saveAppointment(formData)
+      await sendAppointmentEmail(formData)
       setStatusMessage(t('homePage.booking.success'))
       setFormData({
         firstName: '',

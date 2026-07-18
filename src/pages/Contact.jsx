@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { saveContactMessage } from '../firebase/contact'
+import { sendContactEmail } from '../firebase/email'
 
 export default function Contact() {
   const { t } = useTranslation()
@@ -16,6 +17,7 @@ export default function Contact() {
     const data = Object.fromEntries(new FormData(form))
     try {
       await saveContactMessage(data)
+      await sendContactEmail(data)
       setSent(true)
       form.reset()
     } catch (err) {
