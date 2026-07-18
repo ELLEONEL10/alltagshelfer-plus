@@ -16,12 +16,12 @@ export default function Contact() {
     const form = event.target
     const data = Object.fromEntries(new FormData(form))
     try {
-      await saveContactMessage(data)
       await sendContactEmail(data)
+      saveContactMessage(data).catch((err) => console.error('Firestore save failed:', err))
       setSent(true)
       form.reset()
     } catch (err) {
-      console.error('Error saving contact message:', err)
+      console.error('Error sending contact email:', err)
       setError(t('homePage.booking.error'))
     } finally {
       setLoading(false)

@@ -46,8 +46,8 @@ export default function Home() {
     setStatusMessage('')
 
     try {
-      await saveAppointment(formData)
       await sendAppointmentEmail(formData)
+      saveAppointment(formData).catch((err) => console.error('Firestore save failed:', err))
       setStatusMessage(t('homePage.booking.success'))
       setFormData({
         firstName: '',
@@ -59,7 +59,7 @@ export default function Home() {
         message: ''
       })
     } catch (error) {
-      console.error('Error saving appointment:', error)
+      console.error('Error sending appointment email:', error)
       setStatusMessage(t('homePage.booking.error'))
     } finally {
       setLoading(false)

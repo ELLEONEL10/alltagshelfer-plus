@@ -73,8 +73,15 @@ const buildAppointmentHTML = (data) => `
 </div>
 `
 
+const fetchWithTimeout = (url, options, timeoutMs = 15000) => {
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), timeoutMs)
+  return fetch(url, { ...options, signal: controller.signal })
+    .finally(() => clearTimeout(timer))
+}
+
 const sendEmail = async (payload) => {
-  const response = await fetch(FORMSUBMIT_ENDPOINT, {
+  const response = await fetchWithTimeout(FORMSUBMIT_ENDPOINT, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
     body: JSON.stringify(payload),
