@@ -1,7 +1,13 @@
 import { useTranslation } from 'react-i18next'
+import usePageSEO from '../hooks/usePageSEO'
 
 export default function FAQ() {
   const { t } = useTranslation()
+
+  usePageSEO({
+    de: { title: 'Häufige Fragen (FAQ)', description: 'Häufig gestellte Fragen zu Startgeschwindigkeit der Betreuung und Ihrer festen Bezugsperson – kurz und klar beantwortet.' },
+    en: { title: 'Frequently Asked Questions (FAQ)', description: 'Frequently asked questions about how quickly care can start and your dedicated contact person – answered clearly and concisely.' }
+  })
 
   return (
     <section className="py-16 bg-white dark:bg-slate-950 transition-colors duration-300">

@@ -1,8 +1,14 @@
 import { BedSingle, CalendarCheck, ShoppingCart, Smile, Users } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import usePageSEO from '../hooks/usePageSEO'
 
 export default function ServicesPage() {
   const { t } = useTranslation()
+
+  usePageSEO({
+    de: { title: 'Leistungen', description: 'Von Alltagsbegleitung über Hauswirtschaft, Freizeit, Organisation und Termine bis zur Krankenhausnachsorge – wir passen unsere Leistungen flexibel an Ihre Lebenssituation in Potsdam an.' },
+    en: { title: 'Services', description: 'From everyday companionship to housekeeping, leisure, organisation and hospital aftercare – we adapt our services flexibly to your life situation in Potsdam.' }
+  })
 
   const services = [
     {

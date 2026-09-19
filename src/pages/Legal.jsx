@@ -1,7 +1,12 @@
 import { useTranslation } from 'react-i18next'
+import usePageSEO from '../hooks/usePageSEO'
 
 export default function Legal() {
   const { t } = useTranslation()
+  usePageSEO({
+    de: { title: 'Impressum & Datenschutz', description: 'Impressum und Datenschutzerklärung von Alltagshelfer Plus Herz mit Angaben gemäß § 5 TMG und Informationen zur Verarbeitung personenbezogener Daten.' },
+    en: { title: 'Imprint & Privacy', description: 'Imprint and privacy policy of Alltagshelfer Plus Herz with details pursuant to § 5 TMG and information on the processing of personal data.' }
+  })
   return (
     <section className="py-16 bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="container mx-auto px-4 max-w-5xl space-y-10">

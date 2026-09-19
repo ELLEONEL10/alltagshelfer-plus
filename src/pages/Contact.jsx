@@ -2,9 +2,14 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { saveContactMessage } from '../firebase/contact'
 import { sendContactEmail } from '../firebase/email'
+import usePageSEO from '../hooks/usePageSEO'
 
 export default function Contact() {
   const { t } = useTranslation()
+  usePageSEO({
+    de: { title: 'Kontakt', description: 'Wir sind für Sie da – erreichen Sie Alltagshelfer Plus Herz in Potsdam per Telefon, E-Mail oder Kontaktformular.' },
+    en: { title: 'Contact', description: 'We are here for you – reach Alltagshelfer Plus Herz in Potsdam by phone, email or contact form.' }
+  })
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')

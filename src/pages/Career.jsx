@@ -1,9 +1,14 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { saveApplication } from '../firebase/career'
+import usePageSEO from '../hooks/usePageSEO'
 
 export default function Career() {
   const { t } = useTranslation()
+  usePageSEO({
+    de: { title: 'Karriere', description: 'Werden Sie Teil unseres Teams – flexible Arbeitszeiten, faire Bezahlung und ein wertschätzendes Arbeitsumfeld als Alltagsbegleiter/in in Potsdam.' },
+    en: { title: 'Career', description: 'Become part of our team – flexible working hours, fair pay and a supportive environment as an everyday companion in Potsdam.' }
+  })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')

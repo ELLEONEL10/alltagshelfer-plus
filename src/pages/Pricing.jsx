@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import usePageSEO from '../hooks/usePageSEO'
 
 export default function Pricing() {
   const { t } = useTranslation()
+
+  usePageSEO({
+    de: { title: 'Preise & Finanzierung', description: 'Transparente Kosten und Abrechnung mit der Pflegekasse – bei anerkanntem Pflegegrad über den Entlastungsbetrag (§ 45b SGB XI), § 45a SGB XI oder Verhinderungspflege finanzierbar.' },
+    en: { title: 'Pricing & Funding', description: 'Transparent costs and billing with care insurance – fundable via the relief amount (§ 45b SGB XI), § 45a SGB XI or respite care for recognised care levels.' }
+  })
 
   const steps = [
     {

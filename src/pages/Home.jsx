@@ -4,9 +4,15 @@ import { BedSingle, CalendarCheck, ChevronDown, ShoppingCart, Smile, Users, Shie
 import homepageArt from '../homepage.svg'
 import { saveAppointment } from '../firebase/appointments'
 import { sendAppointmentEmail } from '../firebase/email'
+import usePageSEO from '../hooks/usePageSEO'
 
 export default function Home() {
   const { t } = useTranslation()
+
+  usePageSEO({
+    de: { title: 'Startseite', description: 'Hilfe im Alltag, klar erklärt und direkt buchbar – Alltagshelfer Plus Herz begleitet Sie mit Herzlichkeit und Zuverlässigkeit in Ihrem eigenen Zuhause in Potsdam.' },
+    en: { title: 'Home', description: 'Everyday help, clearly explained and directly bookable – Alltagshelfer Plus Herz supports you with heart and reliability in your own home in Potsdam.' }
+  })
 
   const categories = [
     { id: 'alltag', icon: Users, title: t('homePage.services.alltag.title'), intro: t('homePage.services.alltag.intro'), details: [t('homePage.services.alltag.detail1'), t('homePage.services.alltag.detail2'), t('homePage.services.alltag.detail3')] },

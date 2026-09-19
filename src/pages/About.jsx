@@ -1,7 +1,13 @@
 import { useTranslation } from 'react-i18next'
+import usePageSEO from '../hooks/usePageSEO'
 
 export default function About() {
   const { t } = useTranslation()
+
+  usePageSEO({
+    de: { title: 'Über uns', description: 'Lernen Sie Kasem Alzuabi kennen – Rettungssanitäter, zertifizierter Erste-Hilfe-Ausbilder und Ihr Partner für Sicherheit und Unterstützung im Alltag in Potsdam.' },
+    en: { title: 'About Us', description: 'Meet Kasem Alzuabi – paramedic, certified first-aid instructor and your partner for safety and everyday support in Potsdam.' }
+  })
 
   return (
     <section className="py-16 bg-white dark:bg-slate-950 transition-colors duration-300">

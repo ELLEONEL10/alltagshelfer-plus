@@ -2,10 +2,15 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import { signInWithGoogle } from '../firebase/auth'
+import usePageSEO from '../hooks/usePageSEO'
 
 export default function Login() {
   const { t } = useTranslation()
   const navigate = useNavigate()
+  usePageSEO({
+    de: { title: 'Anmelden', description: 'Anmelden zum Kundenbereich von Alltagshelfer Plus Herz – sicher per Google-Konto.' },
+    en: { title: 'Login', description: 'Sign in to the Alltagshelfer Plus Herz customer area – securely with your Google account.' }
+  })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 

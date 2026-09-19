@@ -27,7 +27,7 @@ function RouteLoader() {
 }
 
 function App() {
-  const { i18n, t } = useTranslation()
+  const { i18n } = useTranslation()
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme')
     if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme
@@ -38,8 +38,7 @@ function App() {
     const lang = i18n.language || 'de'
     document.documentElement.lang = lang
     document.documentElement.dir = 'ltr'
-    document.title = t('site.home.headline') + ' - ' + t('site.home.subheadline')
-  }, [i18n.language, t])
+  }, [i18n.language])
 
 
 
