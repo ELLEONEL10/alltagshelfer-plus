@@ -343,6 +343,16 @@
     "loginError": "Fehler beim Anmelden",
     "loading": "Wird geladen..."
   },
+  "whatsapp": {
+    "contactTitle": "Neue Kontaktanfrage (Website)",
+    "bookingTitle": "Neue Terminbuchung (Website)",
+    "careerTitle": "Neue Bewerbung (Website)",
+    "service": "Leistung",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "cv": "Lebenslauf",
+    "fallback": "Per WhatsApp senden"
+  },
   "legalPage": {
     "imprintTitle": "Impressum",
     "imprintSubtitle": "Angaben gemäß § 5 TMG",
@@ -350,8 +360,8 @@
     "contact": "Kontakt:",
     "phone": "Telefon:",
     "email": "E-Mail:",
-    "vatId": "Umsatzsteuer-ID:",
-    "vatIdText": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:",
+    "vatId": "Steuernummer:",
+    "vatIdText": "Steuernummer gemäß § 152 Abgabenordnung (AO):",
     "privacyTitle": "Datenschutzerklärung",
     "privacyIntro": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wir Sie darüber, welche Daten wir auf dieser Website erheben und wie wir diese verarbeiten.",
     "section1Title": "1. Verantwortliche Stelle",

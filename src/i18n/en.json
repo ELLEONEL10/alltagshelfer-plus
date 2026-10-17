@@ -343,6 +343,16 @@
     "loginError": "Error signing in",
     "loading": "Loading..."
   },
+  "whatsapp": {
+    "contactTitle": "New contact enquiry (website)",
+    "bookingTitle": "New appointment request (website)",
+    "careerTitle": "New application (website)",
+    "service": "Service",
+    "date": "Date",
+    "time": "Time",
+    "cv": "CV",
+    "fallback": "Send via WhatsApp"
+  },
   "legalPage": {
     "imprintTitle": "Imprint",
     "imprintSubtitle": "Information according to § 5 TMG",
@@ -350,8 +360,8 @@
     "contact": "Contact:",
     "phone": "Phone:",
     "email": "Email:",
-    "vatId": "VAT ID:",
-    "vatIdText": "VAT identification number according to § 27 a German VAT Act:",
+    "vatId": "Tax number:",
+    "vatIdText": "Tax number according to § 152 German Fiscal Code (AO):",
     "privacyTitle": "Privacy Policy",
     "privacyIntro": "The protection of your personal data is important to us. Below we inform you about what data we collect on this website and how we process it.",
     "section1Title": "1. Responsible body",

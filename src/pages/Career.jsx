@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { saveApplication } from '../firebase/career'
+import { sendWhatsAppMessage } from '../utils/whatsapp'
 import usePageSEO from '../hooks/usePageSEO'
 
 export default function Career() {
@@ -12,11 +13,13 @@ export default function Career() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [waLink, setWaLink] = useState('')
 
   const handleSubmit = async (event) => {
     event.preventDefault()
     setLoading(true)
     setError('')
+    setWaLink('')
     const form = event.target
     const data = {
       name: form.name.value.trim(),
@@ -25,7 +28,18 @@ export default function Career() {
       cvFile: form.cv.files[0] || null,
     }
     try {
-      await saveApplication(data)
+      const { cvUrl } = await saveApplication(data)
+      sendWhatsAppMessage({
+        title: t('whatsapp.careerTitle'),
+        lines: [
+          { label: t('site.forms.name'), value: data.name },
+          { label: t('site.forms.email'), value: data.email },
+          { label: t('site.forms.phone'), value: data.phone },
+          { label: t('whatsapp.cv'), value: cvUrl || data.cvFile?.name || '' },
+        ],
+      }).then(({ ok, link }) => {
+        if (!ok) setWaLink(link)
+      })
       setSubmitted(true)
       form.reset()
     } catch (err) {
@@ -87,6 +101,16 @@ export default function Career() {
             {loading ? t('homePage.booking.sending') : t('site.career.submit')}
           </button>
           {submitted && <p className="text-green-700 dark:text-green-300">{t('site.career.success')}</p>}
+          {submitted && waLink && (
+            <a
+              href={waLink}
+              target="_blank"
+              rel="noreferrer"
+              className="block text-center font-semibold text-green-800 dark:text-green-300 underline"
+            >
+              {t('whatsapp.fallback')}
+            </a>
+          )}
           {error && <p className="text-red-600 text-center">{error}</p>}
         </form>
       </div>

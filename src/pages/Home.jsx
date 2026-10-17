@@ -4,6 +4,7 @@ import { BedSingle, CalendarCheck, ChevronDown, ShoppingCart, Smile, Users, Shie
 import homepageArt from '../homepage.svg'
 import { saveAppointment } from '../firebase/appointments'
 import { sendAppointmentEmail } from '../firebase/email'
+import { sendWhatsAppMessage } from '../utils/whatsapp'
 import usePageSEO from '../hooks/usePageSEO'
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
   const [openTraining, setOpenTraining] = useState('')
   const [loading, setLoading] = useState(false)
   const [statusMessage, setStatusMessage] = useState('')
+  const [waLink, setWaLink] = useState('')
   const today = new Date().toISOString().split('T')[0]
   const [formData, setFormData] = useState({
     firstName: '',
@@ -50,10 +52,25 @@ export default function Home() {
     event.preventDefault()
     setLoading(true)
     setStatusMessage('')
+    setWaLink('')
 
     try {
       await sendAppointmentEmail(formData)
       saveAppointment(formData).catch((err) => console.error('Firestore save failed:', err))
+      sendWhatsAppMessage({
+        title: t('whatsapp.bookingTitle'),
+        lines: [
+          { label: t('homePage.booking.firstName'), value: formData.firstName },
+          { label: t('homePage.booking.lastName'), value: formData.lastName },
+          { label: t('homePage.booking.phone'), value: formData.phone },
+          { label: t('whatsapp.service'), value: formData.service },
+          { label: t('whatsapp.date'), value: formData.date },
+          { label: t('whatsapp.time'), value: formData.time },
+          { label: t('homePage.booking.message'), value: formData.message },
+        ],
+      }).then(({ ok, link }) => {
+        if (!ok) setWaLink(link)
+      })
       setStatusMessage(t('homePage.booking.success'))
       setFormData({
         firstName: '',
@@ -206,6 +223,16 @@ export default function Home() {
               </button>
 
               {statusMessage && <p className="text-sm font-medium text-center text-slate-700 dark:text-slate-300">{statusMessage}</p>}
+              {waLink && (
+                <a
+                  href={waLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block text-center text-sm font-semibold text-green-800 dark:text-green-300 underline"
+                >
+                  {t('whatsapp.fallback')}
+                </a>
+              )}
             </form>
           </div>
 

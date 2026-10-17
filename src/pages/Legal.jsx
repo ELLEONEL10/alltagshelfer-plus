@@ -32,7 +32,7 @@ export default function Legal() {
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed mt-4">
             <strong>{t('legalPage.vatId')}</strong><br />
             {t('legalPage.vatIdText')}<br />
-            [Steuer-ID]
+            046 200 19688
           </p>
         </article>
 

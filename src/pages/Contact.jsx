@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { saveContactMessage } from '../firebase/contact'
 import { sendContactEmail } from '../firebase/email'
+import { sendWhatsAppMessage } from '../utils/whatsapp'
 import usePageSEO from '../hooks/usePageSEO'
 
 export default function Contact() {
@@ -13,16 +14,29 @@ export default function Contact() {
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [waLink, setWaLink] = useState('')
 
   const handleSubmit = async (event) => {
     event.preventDefault()
     setLoading(true)
     setError('')
+    setWaLink('')
     const form = event.target
     const data = Object.fromEntries(new FormData(form))
     try {
       await sendContactEmail(data)
       saveContactMessage(data).catch((err) => console.error('Firestore save failed:', err))
+      sendWhatsAppMessage({
+        title: t('whatsapp.contactTitle'),
+        lines: [
+          { label: t('site.forms.name'), value: data.name },
+          { label: t('site.forms.email'), value: data.email },
+          { label: t('site.forms.phone'), value: data.phone },
+          { label: t('site.forms.message'), value: data.message },
+        ],
+      }).then(({ ok, link }) => {
+        if (!ok) setWaLink(link)
+      })
       setSent(true)
       form.reset()
     } catch (err) {
@@ -89,6 +103,16 @@ export default function Contact() {
               {loading ? t('homePage.booking.sending') : t('site.contact.cta')}
             </button>
             {sent && <p className="text-green-700 dark:text-green-300">{t('site.contact.success')}</p>}
+            {sent && waLink && (
+              <a
+                href={waLink}
+                target="_blank"
+                rel="noreferrer"
+                className="block text-center font-semibold text-green-800 dark:text-green-300 underline"
+              >
+                {t('whatsapp.fallback')}
+              </a>
+            )}
             {error && <p className="text-red-600 text-center">{error}</p>}
           </form>
         </div>

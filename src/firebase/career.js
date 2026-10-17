@@ -13,7 +13,7 @@ export const saveApplication = async ({ name, email, phone, cvFile }) => {
     cvUrl = await getDownloadURL(snapshot.ref)
   }
 
-  return await addDoc(collection(db, 'applications'), {
+  const docRef = await addDoc(collection(db, 'applications'), {
     name,
     email,
     phone,
@@ -22,4 +22,6 @@ export const saveApplication = async ({ name, email, phone, cvFile }) => {
     createdAt: serverTimestamp(),
     status: 'new'
   })
+
+  return { id: docRef.id, cvUrl, cvName }
 }
