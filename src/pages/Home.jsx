@@ -2,9 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BedSingle, CalendarCheck, ChevronDown, ShoppingCart, Smile, Users, ShieldCheck, GraduationCap, ClipboardCheck, MapPin, PhoneCall } from 'lucide-react'
 import homepageArt from '../homepage.svg'
-import { saveAppointment } from '../firebase/appointments'
-import { sendAppointmentEmail } from '../firebase/email'
-import { sendWhatsAppMessage } from '../utils/whatsapp'
+import { buildWhatsAppLink, formatWhatsAppMessage } from '../utils/whatsapp'
 import usePageSEO from '../hooks/usePageSEO'
 
 export default function Home() {
@@ -55,9 +53,7 @@ export default function Home() {
     setWaLink('')
 
     try {
-      await sendAppointmentEmail(formData)
-      saveAppointment(formData).catch((err) => console.error('Firestore save failed:', err))
-      sendWhatsAppMessage({
+      const message = formatWhatsAppMessage({
         title: t('whatsapp.bookingTitle'),
         lines: [
           { label: t('homePage.booking.firstName'), value: formData.firstName },
@@ -68,9 +64,10 @@ export default function Home() {
           { label: t('whatsapp.time'), value: formData.time },
           { label: t('homePage.booking.message'), value: formData.message },
         ],
-      }).then(({ ok, link }) => {
-        if (!ok) setWaLink(link)
       })
+      const link = buildWhatsAppLink(message)
+      setWaLink(link)
+      window.open(link, '_blank', 'noopener,noreferrer')
       setStatusMessage(t('homePage.booking.success'))
       setFormData({
         firstName: '',
@@ -82,7 +79,7 @@ export default function Home() {
         message: ''
       })
     } catch (error) {
-      console.error('Error sending appointment email:', error)
+      console.error('Error opening WhatsApp:', error)
       setStatusMessage(t('homePage.booking.error'))
     } finally {
       setLoading(false)

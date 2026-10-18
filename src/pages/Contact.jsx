@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { saveContactMessage } from '../firebase/contact'
-import { sendContactEmail } from '../firebase/email'
-import { sendWhatsAppMessage } from '../utils/whatsapp'
+import { buildWhatsAppLink, formatWhatsAppMessage } from '../utils/whatsapp'
 import usePageSEO from '../hooks/usePageSEO'
 
 export default function Contact() {
@@ -24,9 +22,7 @@ export default function Contact() {
     const form = event.target
     const data = Object.fromEntries(new FormData(form))
     try {
-      await sendContactEmail(data)
-      saveContactMessage(data).catch((err) => console.error('Firestore save failed:', err))
-      sendWhatsAppMessage({
+      const message = formatWhatsAppMessage({
         title: t('whatsapp.contactTitle'),
         lines: [
           { label: t('site.forms.name'), value: data.name },
@@ -34,13 +30,14 @@ export default function Contact() {
           { label: t('site.forms.phone'), value: data.phone },
           { label: t('site.forms.message'), value: data.message },
         ],
-      }).then(({ ok, link }) => {
-        if (!ok) setWaLink(link)
       })
+      const link = buildWhatsAppLink(message)
+      setWaLink(link)
+      window.open(link, '_blank', 'noopener,noreferrer')
       setSent(true)
       form.reset()
     } catch (err) {
-      console.error('Error sending contact email:', err)
+      console.error('Error opening WhatsApp:', err)
       setError(t('homePage.booking.error'))
     } finally {
       setLoading(false)
@@ -102,7 +99,6 @@ export default function Contact() {
             <button type="submit" disabled={loading} className="btn-primary w-full bg-gold-primary hover:bg-gold-dark text-navy-dark disabled:opacity-50">
               {loading ? t('homePage.booking.sending') : t('site.contact.cta')}
             </button>
-            {sent && <p className="text-green-700 dark:text-green-300">{t('site.contact.success')}</p>}
             {sent && waLink && (
               <a
                 href={waLink}

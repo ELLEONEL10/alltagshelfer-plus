@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { saveApplication } from '../firebase/career'
-import { sendWhatsAppMessage } from '../utils/whatsapp'
+import { buildWhatsAppLink, formatWhatsAppMessage } from '../utils/whatsapp'
 import usePageSEO from '../hooks/usePageSEO'
 
 export default function Career() {
@@ -28,22 +27,22 @@ export default function Career() {
       cvFile: form.cv.files[0] || null,
     }
     try {
-      const { cvUrl } = await saveApplication(data)
-      sendWhatsAppMessage({
+      const message = formatWhatsAppMessage({
         title: t('whatsapp.careerTitle'),
         lines: [
           { label: t('site.forms.name'), value: data.name },
           { label: t('site.forms.email'), value: data.email },
           { label: t('site.forms.phone'), value: data.phone },
-          { label: t('whatsapp.cv'), value: cvUrl || data.cvFile?.name || '' },
+          { label: t('whatsapp.cv'), value: data.cvFile?.name || '' },
         ],
-      }).then(({ ok, link }) => {
-        if (!ok) setWaLink(link)
       })
+      const link = buildWhatsAppLink(message)
+      setWaLink(link)
+      window.open(link, '_blank', 'noopener,noreferrer')
       setSubmitted(true)
       form.reset()
     } catch (err) {
-      console.error('Error saving application:', err)
+      console.error('Error opening WhatsApp:', err)
       setError(t('homePage.booking.error'))
     } finally {
       setLoading(false)
@@ -100,7 +99,6 @@ export default function Career() {
           <button type="submit" disabled={loading} className="btn-primary w-full bg-gold-primary hover:bg-gold-dark text-navy-dark disabled:opacity-50">
             {loading ? t('homePage.booking.sending') : t('site.career.submit')}
           </button>
-          {submitted && <p className="text-green-700 dark:text-green-300">{t('site.career.success')}</p>}
           {submitted && waLink && (
             <a
               href={waLink}
